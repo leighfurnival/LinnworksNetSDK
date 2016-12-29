@@ -80,6 +80,8 @@
     <Compile Include="Class_Change_PurchaseOrderStatusParameter.cs" />
     <Compile Include="Class_Channel.cs" />
     <Compile Include="Class_ChannelDetails.cs" />
+    <Compile Include="Class_ChannelItem.cs" />
+    <Compile Include="Class_ChannelOptions.cs" />
     <Compile Include="Class_ChannelPaymentMethod.cs" />
     <Compile Include="Class_ChannelPostalService.cs" />
     <Compile Include="Class_ChannelRefundReason.cs" />

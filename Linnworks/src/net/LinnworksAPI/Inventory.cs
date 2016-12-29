@@ -31,9 +31,9 @@ namespace LinnworksAPI
             return Newtonsoft.Json.JsonConvert.DeserializeObject<List<AnyConfig>>(Factory.GetResponse("Inventory/GetChannels", "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
-        public static List<String> GetChannelItems(Int32 ChannelID, String Keyword, Int32 Page, Boolean ShowLinked, Int32 ShowOnPage, Boolean ShowUnlinked, String Source, String Subsource, String ApiToken, String ApiServer)
+        public static List<ChannelItem> GetChannelItems(Int32 ChannelID, String Keyword, Int32 Page, Boolean ShowLinked, Int32 ShowOnPage, Boolean ShowUnlinked, String Source, String Subsource, String ApiToken, String ApiServer)
         {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<String>>(Factory.GetResponse("Inventory/GetChannelItems", "channelOptions={\"ChannelId\":\"" + ChannelID + "\",\"Keyword\":\"" + Keyword + "\",\"Page\":" + Page + ",\"ShowLinked\":" + ShowLinked + ",\"ShowOnPage\":" + ShowOnPage + ",\"ShowUnlinked\":" + ShowUnlinked + ",\"Source\":\"" + Source + "\",\"SubSource\":\"" + Subsource + "\"}", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<ChannelItem>>(Factory.GetResponse("ChannelMapping/GetChannelItems", "channelOptions={\"ChannelId\":" + ChannelID + ",\"Keyword\":\"" + Keyword + "\",\"Page\":" + Page + ",\"ShowLinked\":" + "true" + ",\"ShowOnPage\":" + ShowOnPage + ",\"ShowUnlinked\":" + "false" + ",\"Source\":\"" + Source + "\",\"SubSource\":\"" + Subsource + "\"}", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
         public static List<HeaderConfig> GetChannelsBySource(String source, String ApiToken, String ApiServer)
