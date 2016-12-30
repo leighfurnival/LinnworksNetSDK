@@ -274,3 +274,7 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/
 *.pfx
+*.dll
+*.pdb
+Linnworks/src/net/LinnworksAPI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.cache
