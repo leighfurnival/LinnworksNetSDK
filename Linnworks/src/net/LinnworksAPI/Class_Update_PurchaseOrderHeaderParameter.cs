@@ -5,15 +5,15 @@ namespace LinnworksAPI
     public class Update_PurchaseOrderHeaderParameter
     {
         public Guid pkPurchaseID;
-        public String SupplierReferenceNumber;
+        public string SupplierReferenceNumber;
         public Guid? fkLocationId;
         public Guid? fkSupplierId;
-        public String Currency;
-        public String ExternalInvoiceNumber;
+        public string Currency;
+        public string ExternalInvoiceNumber;
         public DateTime? DateOfPurchase;
         public DateTime? QuotedDeliveryDate;
-        public Decimal? ShippingTaxRate;
-        public Decimal? ConversionRate;
-        public Decimal? PostagePaid;
+        public decimal? ShippingTaxRate;
+        public decimal? ConversionRate;
+        public decimal? PostagePaid;
     }
 }

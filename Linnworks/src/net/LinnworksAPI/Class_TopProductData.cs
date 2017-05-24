@@ -1,14 +1,12 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class TopProductData
     {
-        public Int32 RowNum;
-        public Int32 Quantity;
-        public Double Cost;
-        public String Title;
-        public String SKU;
-        public String Currency;
+        public int RowNum;
+        public int Quantity;
+        public double Cost;
+        public string Title;
+        public string SKU;
+        public string Currency;
     }
 }

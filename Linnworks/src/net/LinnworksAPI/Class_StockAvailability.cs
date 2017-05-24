@@ -7,7 +7,7 @@ namespace LinnworksAPI
         public Guid PkId;
         public LevelType LevelType;
         public AvailabilityStatus Status;
-        public String ReferenceNumber;
-        public Int32 Quantity;
+        public string ReferenceNumber;
+        public int Quantity;
     }
 }

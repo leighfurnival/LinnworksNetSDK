@@ -4,12 +4,12 @@ namespace LinnworksAPI
 {
     public class StockItemImage
     {
-        public String Source;
-        public String FullSource;
-        public String CheckSumValue;
+        public string Source;
+        public string FullSource;
+        public string CheckSumValue;
         public Guid pkRowId;
-        public Boolean IsMain;
-        public Int32 SortOrder;
+        public bool IsMain;
+        public int SortOrder;
         public Guid StockItemId;
     }
 }

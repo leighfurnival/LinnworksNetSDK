@@ -4,10 +4,10 @@ namespace LinnworksAPI
 {
     public class OrderRelation
     {
-        public Int32 ChildOrderId;
+        public int ChildOrderId;
         public Guid ChildOrderPkOrderId;
-        public Int32 ParentOrderId;
+        public int ParentOrderId;
         public Guid ParentOrderPkOrderId;
-        public String RelationType;
+        public string RelationType;
     }
 }

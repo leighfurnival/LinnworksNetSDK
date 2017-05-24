@@ -5,8 +5,8 @@ namespace LinnworksAPI
     public class StockLocation
     {
         public Guid StockLocationId;
-        public String LocationName;
-        public Boolean IsFulfillmentCenter;
-        public String LocationTag;
+        public string LocationName;
+        public bool IsFulfillmentCenter;
+        public string LocationTag;
     }
 }

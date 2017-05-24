@@ -5,8 +5,8 @@ namespace LinnworksAPI
     public class PostageService
     {
         public Guid pkPostalServiceId;
-        public String PostalServiceName;
-        public Boolean TrackingNumberRequired;
-        public String Vendor;
+        public string PostalServiceName;
+        public bool TrackingNumberRequired;
+        public string Vendor;
     }
 }

@@ -5,11 +5,11 @@ namespace LinnworksAPI
 {
     public class StockItemSoldStat
     {
-        public String Source;
-        public Int32 Quantity;
-        public Double Total;
-        public Double Cost;
-        public Double ProfitMargin;
+        public string Source;
+        public int Quantity;
+        public double Total;
+        public double Cost;
+        public double ProfitMargin;
         public List<StockItemSoldStatDetail> Detail;
         public Guid StockItemId;
     }

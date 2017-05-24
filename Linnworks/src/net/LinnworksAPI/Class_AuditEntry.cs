@@ -4,13 +4,13 @@ namespace LinnworksAPI
 {
     public class AuditEntry
     {
-        public Int32 sid_history;
+        public int sid_history;
         public Guid fkOrderId;
-        public String HistoryNote;
-        public String fkOrderHistoryTypeId;
+        public string HistoryNote;
+        public string fkOrderHistoryTypeId;
         public DateTime DateStamp;
-        public String Tag;
-        public String UpdatedBy;
-        public String TypeDescription;
+        public string Tag;
+        public string UpdatedBy;
+        public string TypeDescription;
     }
 }

@@ -5,35 +5,35 @@ namespace LinnworksAPI
 {
     public class HeaderConfig
     {
-        public ConfigItem<Boolean> Enabled;
-        public ConfigItem<String> ChannelTag;
+        public ConfigItem<bool> Enabled;
+        public ConfigItem<string> ChannelTag;
         public ConfigChannelLocationBinding ChannelLocationBinding;
-        public ConfigItem<Boolean> IsMultiLocation;
-        public ConfigItem<Boolean> DespatchNotes;
+        public ConfigItem<bool> IsMultiLocation;
+        public ConfigItem<bool> DespatchNotes;
         public ConfigItem<DateTime> OrderSyncDate;
         public ConfigPropertySelectionList<SelectStringValueOption, Guid> OrderSaveLocation;
-        public ConfigProperty<Boolean> HidesHeaderAttributes;
-        public ConfigItem<Boolean> InventorySync;
+        public ConfigProperty<bool> HidesHeaderAttributes;
+        public ConfigItem<bool> InventorySync;
         public ConfigStockLocationBinding StockLocationBinding;
-        public ConfigItem<Boolean> PriceChange;
-        public ConfigItem<Int32> MaxListed;
-        public ConfigItem<Double> StockPercentage;
-        public ConfigItem<Int32> EndWhen;
-        public ConfigItem<Boolean> IsListingScanRunning;
+        public ConfigItem<bool> PriceChange;
+        public ConfigItem<int> MaxListed;
+        public ConfigItem<double> StockPercentage;
+        public ConfigItem<int> EndWhen;
+        public ConfigItem<bool> IsListingScanRunning;
         public ConfigItem<DateTime> ListingScanStartUpdateDate;
         public ConfigItem<DateTime> LastListingUpdateDate;
         public ConfigItem<DateTime> EstimatedInventoryScanComplete;
-        public Boolean IsHeaderOnly;
-        public Boolean IsHidden;
+        public bool IsHeaderOnly;
+        public bool IsHidden;
         public ConfigItemExternal DynamicProperties;
         public ConfigPostalServiceMapping PostalServiceMapping;
         public ConfigPaymentMethodMapping PaymentMethodMapping;
-        public Int32 PkChannelId;
-        public String Source;
-        public String SourceType;
+        public int PkChannelId;
+        public string Source;
+        public string SourceType;
         public ConfigRuleCollection Rules;
         public List<ConfigButton> Buttons;
-        public String SubSource;
+        public string SubSource;
         public List<System_Channel_Setting_Property> HeaderAuditValues;
     }
 }

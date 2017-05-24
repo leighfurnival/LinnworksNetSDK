@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
@@ -7,6 +6,6 @@ namespace LinnworksAPI
     {
         public ValidationResultTypes Type;
         public List<RefundItem> InvalidItems;
-        public String AdditionalInformation;
+        public string AdditionalInformation;
     }
 }

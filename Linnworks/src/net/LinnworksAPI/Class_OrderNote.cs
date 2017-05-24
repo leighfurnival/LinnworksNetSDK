@@ -5,10 +5,10 @@ namespace LinnworksAPI
     [Serializable]
     public class OrderNote
     {
-        public Boolean Internal;
-        public String Note;
+        public bool Internal;
+        public string Note;
         public DateTime NoteEntryDate;
-        public String NoteUserName;
+        public string NoteUserName;
         public Guid pkOrderNoteId;
     }
 }

@@ -5,10 +5,10 @@ namespace LinnworksAPI
     public class WarehouseTransferBinNote
     {
         public Guid PkTransferBinNoteId;
-        public String NoteUser;
-        public String Note;
+        public string NoteUser;
+        public string Note;
         public DateTime NoteDateTime;
-        public Boolean NoteRead;
+        public bool NoteRead;
         public Guid PkBinId;
     }
 }

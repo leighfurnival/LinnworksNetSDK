@@ -6,21 +6,21 @@ namespace LinnworksAPI
     public class BaseSession
     {
         public DateTime LastActivity;
-        public String Device;
-        public String DeviceType;
-        public String Server;
+        public string Device;
+        public string DeviceType;
+        public string Server;
         public StatusDetails Status;
-        public String BsonId;
+        public string BsonId;
         public Guid Id;
-        public String Email;
+        public string Email;
         public Guid UserId;
-        public String UserName;
-        public String UserType;
+        public string UserName;
+        public string UserType;
         public string Token;
         public Guid EntityId;
-        public String GroupName;
+        public string GroupName;
         public LocalityType Locality;
-        public Dictionary<String, String> Properties;
+        public Dictionary<string, string> Properties;
         public DataCache Cache;
     }
 }

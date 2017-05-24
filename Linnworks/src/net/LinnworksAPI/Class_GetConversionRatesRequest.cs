@@ -1,10 +1,8 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class GetConversionRatesRequest
     {
-        public Boolean GetCurrenciesFromOrders;
-        public String Currency;
+        public bool GetCurrenciesFromOrders;
+        public string Currency;
     }
 }

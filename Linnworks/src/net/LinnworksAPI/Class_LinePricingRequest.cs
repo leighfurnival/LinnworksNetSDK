@@ -1,12 +1,10 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class LinePricingRequest
     {
-        public Double PricePerUnit;
-        public Double DiscountPercentage;
-        public Double TaxRatePercentage;
-        public Boolean TaxInclusive;
+        public double PricePerUnit;
+        public double DiscountPercentage;
+        public double TaxRatePercentage;
+        public bool TaxInclusive;
     }
 }

@@ -1,11 +1,9 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class VirtualPrinter
     {
-        public String PrinterLocationName;
-        public String PrinterName;
+        public string PrinterLocationName;
+        public string PrinterName;
         public PrinterStatus Status;
     }
 }

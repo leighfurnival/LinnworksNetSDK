@@ -4,7 +4,7 @@ namespace LinnworksAPI
 {
     public class Search_Stock_ByKey
     {
-        public String Key;
+        public string Key;
         public Guid LocationId;
     }
 }

@@ -6,7 +6,7 @@ namespace LinnworksAPI
     public class GetOrderPackagingCalculationRequest
     {
         public List<Guid> pkOrderIds;
-        public Boolean Recalculate;
-        public Boolean SaveRecalculation;
+        public bool Recalculate;
+        public bool SaveRecalculation;
     }
 }

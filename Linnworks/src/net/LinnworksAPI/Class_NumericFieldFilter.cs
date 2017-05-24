@@ -1,11 +1,9 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class NumericFieldFilter
     {
         public NumericFieldFilterType Type;
-        public Double Value;
+        public double Value;
         public FieldCode FieldCode;
     }
 }

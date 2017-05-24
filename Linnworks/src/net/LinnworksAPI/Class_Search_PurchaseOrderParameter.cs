@@ -8,9 +8,9 @@ namespace LinnworksAPI
         public DateTime? DateFrom;
         public DateTime? DateTo;
         public PurchaseOrderStatus? Status;
-        public String ReferenceLike;
-        public Int32 EntriesPerPage;
-        public Int32 PageNumber;
+        public string ReferenceLike;
+        public int EntriesPerPage;
+        public int PageNumber;
         public List<Guid> Location;
         public List<Guid> Supplier;
     }

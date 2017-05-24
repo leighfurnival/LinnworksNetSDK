@@ -1,15 +1,13 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class OrderSplit
     {
-        public Int32 Length;
-        public Int64 LongLength;
-        public Int32 Rank;
-        public Object SyncRoot;
-        public Boolean IsReadOnly;
-        public Boolean IsFixedSize;
-        public Boolean IsSynchronized;
+        public int Length;
+        public long LongLength;
+        public int Rank;
+        public object SyncRoot;
+        public bool IsReadOnly;
+        public bool IsFixedSize;
+        public bool IsSynchronized;
     }
 }

@@ -4,11 +4,11 @@ namespace LinnworksAPI
 {
     public class StockItemScrap
     {
-        public Int32 Year;
-        public Int32 Month;
-        public String Reason;
-        public Int32 Quantity;
-        public Double Cost;
+        public int Year;
+        public int Month;
+        public string Reason;
+        public int Quantity;
+        public double Cost;
         public Guid StockItemId;
     }
 }

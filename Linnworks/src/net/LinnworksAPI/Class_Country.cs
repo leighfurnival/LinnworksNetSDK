@@ -5,10 +5,10 @@ namespace LinnworksAPI
     public class Country
     {
         public Guid CountryId;
-        public String CountryName;
-        public String CountryCode;
-        public String Continent;
-        public Boolean CustomsRequired;
-        public Double TaxRate;
+        public string CountryName;
+        public string CountryCode;
+        public string Continent;
+        public bool CustomsRequired;
+        public double TaxRate;
     }
 }

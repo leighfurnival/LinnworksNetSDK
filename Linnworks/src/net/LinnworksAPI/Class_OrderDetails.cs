@@ -6,8 +6,8 @@ namespace LinnworksAPI
     public class OrderDetails
     {
         public Guid OrderId;
-        public Int32 NumOrderId;
-        public Boolean Processed;
+        public int NumOrderId;
+        public bool Processed;
         public DateTime? ProcessedDateTime;
         public Guid FulfilmentLocationId;
         public OrderGeneralInfo GeneralInfo;
@@ -15,7 +15,7 @@ namespace LinnworksAPI
         public OrderCustomerInfo CustomerInfo;
         public OrderTotalsInfo TotalsInfo;
         public List<ExtendedProperty> ExtendedProperties;
-        public List<String> FolderName;
+        public List<string> FolderName;
         public List<OrderItem> Items;
         public List<OrderNote> Notes;
     }

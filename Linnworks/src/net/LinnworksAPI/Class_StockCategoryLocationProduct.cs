@@ -1,12 +1,10 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class StockCategoryLocationProduct
     {
-        public String ItemNumber;
-        public String ItemTitle;
-        public Int32 StockLevel;
-        public Double StockValue;
+        public string ItemNumber;
+        public string ItemTitle;
+        public int StockLevel;
+        public double StockValue;
     }
 }

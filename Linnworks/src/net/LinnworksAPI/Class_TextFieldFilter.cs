@@ -1,11 +1,9 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class TextFieldFilter
     {
         public TextFieldFilterType Type;
-        public String Text;
+        public string Text;
         public FieldCode FieldCode;
     }
 }

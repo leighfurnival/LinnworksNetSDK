@@ -1,12 +1,10 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class ConfigButton
     {
-        public String FieldName;
-        public String GroupName;
-        public String DisplayName;
-        public String FunctionName;
+        public string FieldName;
+        public string GroupName;
+        public string DisplayName;
+        public string FunctionName;
     }
 }

@@ -6,7 +6,7 @@ namespace LinnworksAPI
     {
         public Guid pkPurchaseId;
         public Guid pkPurchaseItemId;
-        public Int32? Delivered;
-        public Int32? AddToDelivered;
+        public int? Delivered;
+        public int? AddToDelivered;
     }
 }

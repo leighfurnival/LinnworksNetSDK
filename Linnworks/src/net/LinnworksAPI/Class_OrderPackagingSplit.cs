@@ -7,10 +7,10 @@ namespace LinnworksAPI
     {
         public Guid pkBinId;
         public Guid pkPostalServiceId;
-        public Double PackagingWeight;
+        public double PackagingWeight;
         public Guid fkPackagingTypeId;
         public List<OrderPackagingSplitItem> Items;
-        public Double TotalWeight;
-        public String TrackingNumbers;
+        public double TotalWeight;
+        public string TrackingNumbers;
     }
 }

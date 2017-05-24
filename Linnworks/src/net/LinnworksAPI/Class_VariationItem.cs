@@ -6,7 +6,7 @@ namespace LinnworksAPI
     {
         public Guid pkRowId;
         public Guid pkStockItemId;
-        public String ItemNumber;
-        public String ItemTitle;
+        public string ItemNumber;
+        public string ItemTitle;
     }
 }

@@ -1,10 +1,8 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class ListFieldFilter
     {
-        public String Value;
+        public string Value;
         public ListFieldFilterType Type;
         public FieldCode FieldCode;
     }

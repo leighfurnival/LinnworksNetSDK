@@ -5,19 +5,19 @@ namespace LinnworksAPI
     public class Supplier
     {
         public Guid pkSupplierID;
-        public String SupplierName;
-        public String ContactName;
-        public String Address;
-        public String AlternativeAddress;
-        public String City;
-        public String Region;
-        public String Country;
-        public String PostCode;
-        public String TelephoneNumber;
-        public String SecondaryTelNumber;
-        public String FaxNumber;
-        public String Email;
-        public String WebPage;
-        public String Currency;
+        public string SupplierName;
+        public string ContactName;
+        public string Address;
+        public string AlternativeAddress;
+        public string City;
+        public string Region;
+        public string Country;
+        public string PostCode;
+        public string TelephoneNumber;
+        public string SecondaryTelNumber;
+        public string FaxNumber;
+        public string Email;
+        public string WebPage;
+        public string Currency;
     }
 }

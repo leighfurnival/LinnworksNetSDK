@@ -4,18 +4,18 @@ namespace LinnworksAPI
 {
     public class PostalService
     {
-        public String PostalServiceName;
-        public String PostalServiceTag;
-        public String ServiceCountry;
-        public String PostalServiceCode;
-        public String Vendor;
-        public String PrintModule;
-        public String PrintModuleTitle;
+        public string PostalServiceName;
+        public string PostalServiceTag;
+        public string ServiceCountry;
+        public string PostalServiceCode;
+        public string Vendor;
+        public string PrintModule;
+        public string PrintModuleTitle;
         public Guid pkPostalServiceId;
-        public Boolean TrackingNumberRequired;
-        public Boolean WeightRequired;
-        public Boolean IgnorePackagingGroup;
-        public Int32 fkShippingAPIConfigId;
+        public bool TrackingNumberRequired;
+        public bool WeightRequired;
+        public bool IgnorePackagingGroup;
+        public int fkShippingAPIConfigId;
         public Guid? IntegratedServiceId;
     }
 }

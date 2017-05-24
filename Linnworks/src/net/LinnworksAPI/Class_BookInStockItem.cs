@@ -6,7 +6,7 @@ namespace LinnworksAPI
     {
         public Guid StockItemId;
         public Guid LocationId;
-        public Int32 QuantityReceived;
-        public Decimal CostPerUnit;
+        public int QuantityReceived;
+        public decimal CostPerUnit;
     }
 }

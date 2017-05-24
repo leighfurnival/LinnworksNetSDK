@@ -5,8 +5,8 @@ namespace LinnworksAPI
     public class ShippingService
     {
         public Guid pkPostalServiceId;
-        public String PostalServiceName;
-        public String vendor;
-        public String accountid;
+        public string PostalServiceName;
+        public string vendor;
+        public string accountid;
     }
 }

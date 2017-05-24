@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
@@ -7,6 +6,6 @@ namespace LinnworksAPI
     {
         public PurchaseOrderHeader PurchaseOrderHeader;
         public List<PurchaseOrderItem> PurchaseOrderItem;
-        public Int32 NoteCount;
+        public int NoteCount;
     }
 }

@@ -6,8 +6,8 @@ namespace LinnworksAPI
     {
         public DateTime ValueFrom;
         public DateTime ValueTo;
-        public Int32 Days;
-        public Boolean Enabled;
-        public String Type;
+        public int Days;
+        public bool Enabled;
+        public string Type;
     }
 }

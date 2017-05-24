@@ -4,11 +4,11 @@ namespace LinnworksAPI
 {
     public class PermissionsUser
     {
-        public Int32 UserId;
-        public Boolean SuperAdmin;
+        public int UserId;
+        public bool SuperAdmin;
         public Guid fkUserId;
-        public Boolean IsRequestingUser;
-        public String EmailAddress;
-        public String UserType;
+        public bool IsRequestingUser;
+        public string EmailAddress;
+        public string UserType;
     }
 }

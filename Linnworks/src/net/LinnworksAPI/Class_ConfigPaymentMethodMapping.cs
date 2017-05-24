@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
@@ -7,6 +6,6 @@ namespace LinnworksAPI
     {
         public List<ConfigPaymentMethodMappingItem> Mapping;
         public List<ChannelPaymentMethod> ChannelServices;
-        public Boolean IsChanged;
+        public bool IsChanged;
     }
 }

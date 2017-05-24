@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
@@ -6,7 +5,7 @@ namespace LinnworksAPI
     public class StatusDetails
     {
         public StateType State;
-        public String Reason;
-        public Dictionary<String, String> Parameters;
+        public string Reason;
+        public Dictionary<string, string> Parameters;
     }
 }

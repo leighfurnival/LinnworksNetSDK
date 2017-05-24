@@ -4,9 +4,9 @@ namespace LinnworksAPI
 {
     public class StockItemSold
     {
-        public Int32 Quantity;
-        public String ItemNumber;
-        public String ItemTitle;
+        public int Quantity;
+        public string ItemNumber;
+        public string ItemTitle;
         public Guid StockItemId;
     }
 }

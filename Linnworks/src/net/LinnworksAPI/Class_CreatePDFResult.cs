@@ -5,9 +5,9 @@ namespace LinnworksAPI
 {
     public class CreatePDFResult
     {
-        public String URL;
+        public string URL;
         public List<Guid> IdsProcessed;
-        public Dictionary<String, List<Guid>> ProcessedIds;
-        public List<String> PrintErrors;
+        public Dictionary<string, List<Guid>> ProcessedIds;
+        public List<string> PrintErrors;
     }
 }

@@ -4,8 +4,8 @@ namespace LinnworksAPI
 {
     public class PaymentMethod
     {
-        public String Name;
-        public Boolean CanDelete;
+        public string Name;
+        public bool CanDelete;
         public Guid PaymentMethodId;
     }
 }

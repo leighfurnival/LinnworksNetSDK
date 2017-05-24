@@ -6,14 +6,14 @@ namespace LinnworksAPI
     {
         public Guid PackageTypeId;
         public Guid PackageGroupId;
-        public String PackageTitle;
-        public Double FromGramms;
-        public Double ToGramms;
-        public Double PackagingWeight;
-        public Double PackagingCapacity;
+        public string PackageTitle;
+        public double FromGramms;
+        public double ToGramms;
+        public double PackagingWeight;
+        public double PackagingCapacity;
         public Guid Rowguid;
-        public Double Width;
-        public Double Height;
-        public Double Depth;
+        public double Width;
+        public double Height;
+        public double Depth;
     }
 }

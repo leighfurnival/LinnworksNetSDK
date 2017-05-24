@@ -5,15 +5,15 @@ namespace LinnworksAPI
     public class ReturnOrderHeader
     {
         public Guid pkOrderId;
-        public Int32 nOrderId;
-        public String Source;
-        public String SubSource;
-        public String PostalServiceName;
-        public String cShippingAddress;
-        public String cCurrency;
+        public int nOrderId;
+        public string Source;
+        public string SubSource;
+        public string PostalServiceName;
+        public string cShippingAddress;
+        public string cCurrency;
         public DateTime dReceivedDate;
         public DateTime dProcessedOn;
-        public Double fTotalCharge;
-        public String RefundLink;
+        public double fTotalCharge;
+        public string RefundLink;
     }
 }

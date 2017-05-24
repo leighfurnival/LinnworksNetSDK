@@ -6,14 +6,14 @@ namespace LinnworksAPI
     public class InventoryView
     {
         public Guid Id;
-        public String Name;
+        public string Name;
         public ModeType Mode;
-        public String Source;
-        public String SubSource;
-        public String CountryCode;
-        public String CountryName;
+        public string Source;
+        public string SubSource;
+        public string CountryCode;
+        public string CountryName;
         public ListingType Listing;
-        public Boolean ShowOnlyChanged;
+        public bool ShowOnlyChanged;
         public IncludeArchived IncludeProducts;
         public List<Filter> Filters;
         public List<Column> Columns;

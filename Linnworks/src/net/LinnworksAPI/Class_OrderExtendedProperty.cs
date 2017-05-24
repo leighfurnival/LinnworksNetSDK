@@ -5,8 +5,8 @@ namespace LinnworksAPI
     public class OrderExtendedProperty
     {
         public Guid rowid;
-        public String PropertyName;
-        public String PropertyValue;
-        public String PropertyType;
+        public string PropertyName;
+        public string PropertyValue;
+        public string PropertyType;
     }
 }

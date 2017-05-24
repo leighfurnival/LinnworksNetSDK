@@ -1,4 +1,3 @@
-using System;
 using System.Collections.ObjectModel;
 
 namespace LinnworksAPI
@@ -7,6 +6,6 @@ namespace LinnworksAPI
     {
         public ReadOnlyCollection<ConfigPostalServiceMappingItem> Mapping;
         public ReadOnlyCollection<ChannelPostalService> ChannelServices;
-        public Boolean IsChanged;
+        public bool IsChanged;
     }
 }

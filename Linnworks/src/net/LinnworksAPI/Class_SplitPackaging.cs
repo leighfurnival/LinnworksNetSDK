@@ -4,14 +4,14 @@ namespace LinnworksAPI
 {
     public class SplitPackaging
     {
-        public Int32 BinIndex;
-        public String ItemTitle;
-        public String PackageTitle;
+        public int BinIndex;
+        public string ItemTitle;
+        public string PackageTitle;
         public Guid pkBinId;
         public Guid fkOrderItemRowId;
-        public Int32 Quantity;
-        public String SKU;
-        public String TrackingNumber;
-        public Double Weight;
+        public int Quantity;
+        public string SKU;
+        public string TrackingNumber;
+        public double Weight;
     }
 }

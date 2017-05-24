@@ -1,15 +1,13 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class ImportGenericFeed
     {
         public FeedType FeedType;
-        public String Encoding;
-        public Char Delimiter;
-        public Char Comment;
-        public Boolean HasHeaders;
-        public Char Escape;
-        public Char Quote;
+        public string Encoding;
+        public char Delimiter;
+        public char Comment;
+        public bool HasHeaders;
+        public char Escape;
+        public char Quote;
     }
 }

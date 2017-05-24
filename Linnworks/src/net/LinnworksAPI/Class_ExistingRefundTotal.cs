@@ -1,11 +1,9 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class ExistingRefundTotal
     {
-        public Double Amount;
-        public Double TotalCharge;
-        public Double Refundable;
+        public double Amount;
+        public double TotalCharge;
+        public double Refundable;
     }
 }

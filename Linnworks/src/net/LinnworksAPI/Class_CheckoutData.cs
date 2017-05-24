@@ -1,13 +1,11 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class CheckoutData
     {
-        public String CurrencyCode;
-        public String CurrencySymbol;
+        public string CurrencyCode;
+        public string CurrencySymbol;
         public CheckoutItem Item;
         public TotalsInformation TotalsInformation;
-        public Double TaxRate;
+        public double TaxRate;
     }
 }

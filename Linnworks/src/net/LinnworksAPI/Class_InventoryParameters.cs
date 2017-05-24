@@ -6,7 +6,7 @@ namespace LinnworksAPI
     public class InventoryParameters
     {
         public List<Guid> InventoryItemIds;
-        public List<Tuple<Int32, Int32>> SelectedRegions;
+        public List<Tuple<int, int>> SelectedRegions;
         public Guid Token;
     }
 }

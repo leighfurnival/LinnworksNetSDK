@@ -5,7 +5,7 @@ namespace LinnworksAPI
 {
     public class MoveToLocationResult
     {
-        public List<String> Errors;
+        public List<string> Errors;
         public List<Guid> OrdersMoved;
     }
 }

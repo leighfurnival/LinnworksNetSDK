@@ -5,7 +5,7 @@ namespace LinnworksAPI
     [Serializable]
     public class OrderCustomerInfo
     {
-        public String ChannelBuyerName;
+        public string ChannelBuyerName;
         public CustomerAddress Address;
         public Address BillingAddress;
     }

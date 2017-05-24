@@ -4,20 +4,20 @@ namespace LinnworksAPI
 {
     public class ImportRegister
     {
-        public String LastFileChecksum;
-        public String ImportStatus;
-        public Boolean ImportSkipped;
-        public Int32 Id;
+        public string LastFileChecksum;
+        public string ImportStatus;
+        public bool ImportSkipped;
+        public int Id;
         public ImportType Type;
-        public String FriendlyName;
-        public Boolean Executing;
-        public Boolean justOnce;
+        public string FriendlyName;
+        public bool Executing;
+        public bool justOnce;
         public DateTime? Started;
         public DateTime? Completed;
-        public Boolean IsQueued;
-        public Boolean Enabled;
-        public Boolean IsNew;
-        public Boolean AllSchedulesDisabled;
+        public bool IsQueued;
+        public bool Enabled;
+        public bool IsNew;
+        public bool AllSchedulesDisabled;
         public DateTime? NextSchedule;
     }
 }

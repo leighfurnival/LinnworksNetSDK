@@ -8,13 +8,13 @@ namespace LinnworksAPI
         public DateTime? OneTimeDate;
         public DailyFrequencyType? DailyFrequency;
         public DateTime? OccursFrequencyStartingDate;
-        public Int32? OccursFrequencyEveryX;
-        public String WeeklyDays;
+        public int? OccursFrequencyEveryX;
+        public string WeeklyDays;
         public RepetitionType? OccursFrequency;
-        public String OccursOnceAtTime;
-        public Int32? OccursEveryHours;
-        public String StartingTime;
-        public String EndingTime;
-        public Boolean Enabled;
+        public string OccursOnceAtTime;
+        public int? OccursEveryHours;
+        public string StartingTime;
+        public string EndingTime;
+        public bool Enabled;
     }
 }

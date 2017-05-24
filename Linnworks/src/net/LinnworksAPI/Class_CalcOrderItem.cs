@@ -6,12 +6,12 @@ namespace LinnworksAPI
     {
         public Guid fkStockItemId;
         public Guid fkOrderItemId;
-        public String SKU;
-        public Int32 nQty;
-        public Double ItemWeight;
-        public Double DimHeight;
-        public Double DimWidth;
-        public Double DimDepth;
+        public string SKU;
+        public int nQty;
+        public double ItemWeight;
+        public double DimHeight;
+        public double DimWidth;
+        public double DimDepth;
         public Guid PackageGroup;
         public Guid? fkCompositeParentRowId;
     }

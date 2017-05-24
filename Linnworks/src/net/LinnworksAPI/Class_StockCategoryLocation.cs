@@ -5,9 +5,9 @@ namespace LinnworksAPI
     public class StockCategoryLocation
     {
         public Guid StockLocationId;
-        public String CategoryName;
+        public string CategoryName;
         public Guid CategoryId;
-        public Int32 StockLevel;
-        public Double StockValue;
+        public int StockLevel;
+        public double StockValue;
     }
 }

@@ -5,7 +5,7 @@ namespace LinnworksAPI
     public class ProcessOrderResult
     {
         public Guid OrderId;
-        public Boolean Processed;
-        public String Error;
+        public bool Processed;
+        public string Error;
     }
 }

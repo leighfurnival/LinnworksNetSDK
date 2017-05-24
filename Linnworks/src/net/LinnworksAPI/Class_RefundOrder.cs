@@ -5,14 +5,14 @@ namespace LinnworksAPI
     public class RefundOrder
     {
         public Guid pkOrderID;
-        public Int32 nOrderId;
-        public String cFullName;
-        public String Source;
-        public Double Amount;
-        public String IssueRefundUrl;
-        public String cCurrency;
-        public String ReferenceNum;
-        public String SecondaryReference;
+        public int nOrderId;
+        public string cFullName;
+        public string Source;
+        public double Amount;
+        public string IssueRefundUrl;
+        public string cCurrency;
+        public string ReferenceNum;
+        public string SecondaryReference;
         public DateTime RefundDate;
     }
 }

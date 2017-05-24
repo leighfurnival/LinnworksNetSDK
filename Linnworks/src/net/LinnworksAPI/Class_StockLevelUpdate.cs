@@ -4,8 +4,8 @@ namespace LinnworksAPI
 {
     public class StockLevelUpdate
     {
-        public String SKU;
+        public string SKU;
         public Guid LocationId;
-        public Int32 Level;
+        public int Level;
     }
 }

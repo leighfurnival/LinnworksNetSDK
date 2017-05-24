@@ -5,18 +5,18 @@ namespace LinnworksAPI
     [Serializable]
     public class OrderShippingInfo
     {
-        public String Vendor;
+        public string Vendor;
         public Guid PostalServiceId;
-        public String PostalServiceName;
-        public Double TotalWeight;
-        public Double ItemWeight;
+        public string PostalServiceName;
+        public double TotalWeight;
+        public double ItemWeight;
         public Guid PackageCategoryId;
-        public String PackageCategory;
+        public string PackageCategory;
         public Guid? PackageTypeId;
-        public String PackageType;
-        public Double PostageCost;
-        public Double PostageCostExTax;
-        public String TrackingNumber;
-        public Boolean ManualAdjust;
+        public string PackageType;
+        public double PostageCost;
+        public double PostageCostExTax;
+        public string TrackingNumber;
+        public bool ManualAdjust;
     }
 }

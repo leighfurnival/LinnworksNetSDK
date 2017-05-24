@@ -1,12 +1,10 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class SearchField
     {
-        public String Field;
-        public String Name;
-        public Boolean AllowForAllDates;
-        public Boolean ExactSearchOptional;
+        public string Field;
+        public string Name;
+        public bool AllowForAllDates;
+        public bool ExactSearchOptional;
     }
 }

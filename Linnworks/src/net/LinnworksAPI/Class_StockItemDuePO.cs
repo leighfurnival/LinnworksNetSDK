@@ -4,14 +4,14 @@ namespace LinnworksAPI
 {
     public class StockItemDuePO
     {
-        public String SupplierName;
+        public string SupplierName;
         public StockLocation Location;
         public Guid SupplierId;
         public DateTime DateOfPurchase;
         public DateTime QuotedDeliveryDate;
-        public Int32 Quantity;
-        public Int32 Delivered;
-        public Double UnitCost;
+        public int Quantity;
+        public int Delivered;
+        public double UnitCost;
         public Guid StockItemId;
     }
 }

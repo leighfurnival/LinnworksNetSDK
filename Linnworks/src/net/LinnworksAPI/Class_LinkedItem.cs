@@ -5,7 +5,7 @@ namespace LinnworksAPI
     public class LinkedItem
     {
         public Guid pkStockId;
-        public String ItemNumber;
-        public String ItemName;
+        public string ItemNumber;
+        public string ItemName;
     }
 }

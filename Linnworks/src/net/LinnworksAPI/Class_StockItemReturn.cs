@@ -4,10 +4,10 @@ namespace LinnworksAPI
 {
     public class StockItemReturn
     {
-        public Int32 Year;
-        public Int32 Month;
-        public String Reason;
-        public Int32 Quantity;
+        public int Year;
+        public int Month;
+        public string Reason;
+        public int Quantity;
         public Guid StockItemId;
     }
 }

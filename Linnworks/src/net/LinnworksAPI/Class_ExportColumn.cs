@@ -1,18 +1,17 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class ExportColumn
     {
-        public Int32 Order;
+        public int Order;
         public Filters Filters;
-        public Boolean ExportToFile;
+        public bool ExportToFile;
         public List<SubQueryOutputMappingSelectionField> SubQuerySelection;
-        public String FileColumn;
-        public String Column;
-        public String Expression;
-        public String DefaultValue;
-        public Boolean Visible;
+        public string FileColumn;
+        public string Column;
+        public string Expression;
+        public string DefaultValue;
+        public bool Visible;
     }
 }

@@ -1,11 +1,9 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class CustomScriptColumn
     {
-        public Int32 Index;
-        public String Name;
-        public String Type;
+        public int Index;
+        public string Name;
+        public string Type;
     }
 }

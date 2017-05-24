@@ -6,7 +6,7 @@ namespace LinnworksAPI
     public class OrderItemOption
     {
         public Guid pkOptionId;
-        public String Property;
-        public String Value;
+        public string Property;
+        public string Value;
     }
 }

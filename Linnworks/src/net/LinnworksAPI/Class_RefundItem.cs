@@ -5,13 +5,13 @@ namespace LinnworksAPI
     public class RefundItem
     {
         public Guid? pkRefundRowId;
-        public Boolean IsManualRefund;
+        public bool IsManualRefund;
         public RefundItemType Type;
         public Guid? fkOrderItemId;
-        public Int32 RefundQty;
-        public Double RefundAmount;
-        public String Reason;
-        public String ChannelReason;
-        public String ChannelReasonSec;
+        public int RefundQty;
+        public double RefundAmount;
+        public string Reason;
+        public string ChannelReason;
+        public string ChannelReasonSec;
     }
 }

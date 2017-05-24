@@ -5,15 +5,15 @@ namespace LinnworksAPI
     public class StockItemChannelSKU
     {
         public Guid ChannelSKURowId;
-        public String SKU;
-        public String Source;
-        public String SubSource;
-        public String UpdateStatus;
-        public String ChannelReferenceId;
+        public string SKU;
+        public string Source;
+        public string SubSource;
+        public string UpdateStatus;
+        public string ChannelReferenceId;
         public DateTime LastUpdate;
-        public Int32 SubmittedQuantity;
-        public Int32 ListedQuantity;
-        public Int32 MaxListedQuantity;
+        public int SubmittedQuantity;
+        public int ListedQuantity;
+        public int MaxListedQuantity;
         public Guid StockItemId;
     }
 }

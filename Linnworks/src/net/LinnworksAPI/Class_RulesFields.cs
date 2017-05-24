@@ -1,12 +1,11 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class RulesFields
     {
-        public List<String> FieldNames;
-        public Dictionary<String, List<String>> FieldKeys;
-        public String IdName;
+        public List<string> FieldNames;
+        public Dictionary<string, List<string>> FieldKeys;
+        public string IdName;
     }
 }

@@ -5,8 +5,8 @@ namespace LinnworksAPI
 {
     public class VariationGroupTemplate
     {
-        public String VariationGroupName;
-        public String ParentSKU;
+        public string VariationGroupName;
+        public string ParentSKU;
         public Guid ParentStockItemId;
         public List<Guid> VariationItemIds;
     }

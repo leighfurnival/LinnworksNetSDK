@@ -1,15 +1,14 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class ConditionItemBasic
     {
-        public Int32 pkConditionItemId;
-        public Int32 fkConditionId;
-        public String FieldName;
+        public int pkConditionItemId;
+        public int fkConditionId;
+        public string FieldName;
         public EvaluatorType Evaluation;
-        public List<String> Values;
-        public String KeyValue;
+        public List<string> Values;
+        public string KeyValue;
     }
 }

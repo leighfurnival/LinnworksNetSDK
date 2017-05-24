@@ -1,12 +1,11 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class TestpadValue
     {
-        public String FieldName;
-        public String Key;
-        public List<String> Values;
+        public string FieldName;
+        public string Key;
+        public List<string> Values;
     }
 }

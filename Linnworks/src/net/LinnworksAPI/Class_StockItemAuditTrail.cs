@@ -4,10 +4,10 @@ namespace LinnworksAPI
 {
     public class StockItemAuditTrail
     {
-        public String AuditType;
+        public string AuditType;
         public DateTime AuditTrailDate;
-        public String AuditText;
-        public String UserName;
+        public string AuditText;
+        public string UserName;
         public Guid StockItemId;
     }
 }

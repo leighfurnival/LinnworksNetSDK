@@ -1,10 +1,8 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class ChannelRefundSubReason
     {
-        public String Tag;
-        public String DisplayName;
+        public string Tag;
+        public string DisplayName;
     }
 }

@@ -4,10 +4,10 @@ namespace LinnworksAPI
 {
     public class StockItemPricingRule
     {
-        public Int32? pkRowId;
+        public int? pkRowId;
         public Guid fkStockPricingId;
-        public String Type;
-        public Int32 LowerBound;
-        public Double Value;
+        public string Type;
+        public int LowerBound;
+        public double Value;
     }
 }

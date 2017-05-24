@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
@@ -7,6 +6,6 @@ namespace LinnworksAPI
     {
         public PaymentType PaymentType;
         public List<CheckoutRequestParameter> Parameters;
-        public String CurrencyCode;
+        public string CurrencyCode;
     }
 }

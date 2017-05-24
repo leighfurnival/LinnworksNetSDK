@@ -4,31 +4,31 @@ namespace LinnworksAPI
 {
     public class StockItemInv
     {
-        public String VariationGroupName;
-        public String MetaData;
-        public Double TaxRate;
+        public string VariationGroupName;
+        public string MetaData;
+        public double TaxRate;
         public Guid CategoryId;
         public Guid PackageGroupId;
         public Guid PostalServiceId;
-        public Double Weight;
-        public Double Width;
-        public Double Depth;
-        public Double Height;
-        public Int32 Quantity;
-        public Int32 InOrder;
-        public Int32 Due;
-        public Int32 MinimumLevel;
-        public Int32 Available;
+        public double Weight;
+        public double Width;
+        public double Depth;
+        public double Height;
+        public int Quantity;
+        public int InOrder;
+        public int Due;
+        public int MinimumLevel;
+        public int Available;
         public DateTime? CreationDate;
-        public Boolean? IsCompositeParent;
-        public String ItemNumber;
-        public String ItemTitle;
-        public String BarcodeNumber;
-        public Double PurchasePrice;
-        public Double? RetailPrice;
-        public String PostalServiceName;
-        public String CategoryName;
-        public String PackageGroupName;
+        public bool? IsCompositeParent;
+        public string ItemNumber;
+        public string ItemTitle;
+        public string BarcodeNumber;
+        public double PurchasePrice;
+        public double? RetailPrice;
+        public string PostalServiceName;
+        public string CategoryName;
+        public string PackageGroupName;
         public Guid StockItemId;
     }
 }

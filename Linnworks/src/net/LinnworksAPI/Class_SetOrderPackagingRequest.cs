@@ -7,10 +7,10 @@ namespace LinnworksAPI
         public Guid fkPackagingGroupId;
         public Guid fkPackagingTypeId;
         public Guid pkOrderId;
-        public Double TotalWeight;
-        public Boolean ManualAdjust;
-        public Decimal TotalDepth;
-        public Decimal TotalHeight;
-        public Decimal TotalWidth;
+        public double TotalWeight;
+        public bool ManualAdjust;
+        public decimal TotalDepth;
+        public decimal TotalHeight;
+        public decimal TotalWidth;
     }
 }

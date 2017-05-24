@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel;
 
 namespace LinnworksAPI
@@ -7,6 +6,6 @@ namespace LinnworksAPI
     {
         public FieldCode FieldCode;
         public ListSortDirection Direction;
-        public Int32 Order;
+        public int Order;
     }
 }

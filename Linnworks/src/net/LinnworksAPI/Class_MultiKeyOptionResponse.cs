@@ -1,11 +1,10 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class MultiKeyOptionResponse
     {
-        public String Field;
-        public List<String> Options;
+        public string Field;
+        public List<string> Options;
     }
 }

@@ -6,8 +6,8 @@ namespace LinnworksAPI
     {
         public Guid pkRowId;
         public Guid fkStockItemId;
-        public String ProperyName;
-        public String PropertyValue;
-        public String PropertyType;
+        public string ProperyName;
+        public string PropertyValue;
+        public string PropertyType;
     }
 }

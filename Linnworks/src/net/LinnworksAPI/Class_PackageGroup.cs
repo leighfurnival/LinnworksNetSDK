@@ -6,7 +6,7 @@ namespace LinnworksAPI
     public class PackageGroup
     {
         public Guid PackageCategoryID;
-        public String PackageCategory;
+        public string PackageCategory;
         public Guid rowguid;
         public List<PackageType> PackageTypes;
     }

@@ -6,8 +6,8 @@ namespace LinnworksAPI
     {
         public Guid PkTransferAuditId;
         public AuditType AuditType;
-        public Int32 nAuditType;
+        public int nAuditType;
         public DateTime AuditDate;
-        public String AuditNote;
+        public string AuditNote;
     }
 }

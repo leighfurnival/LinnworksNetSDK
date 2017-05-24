@@ -4,7 +4,7 @@ namespace LinnworksAPI
 {
     public class WarehouseLocation
     {
-        public String LocationName;
+        public string LocationName;
         public Guid pkStockLocationId;
     }
 }

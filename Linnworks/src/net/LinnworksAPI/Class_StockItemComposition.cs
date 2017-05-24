@@ -5,10 +5,10 @@ namespace LinnworksAPI
     public class StockItemComposition
     {
         public Guid LinkedStockItemId;
-        public String ItemTitle;
-        public String SKU;
-        public Int32 Quantity;
-        public Double PurchasePrice;
+        public string ItemTitle;
+        public string SKU;
+        public int Quantity;
+        public double PurchasePrice;
         public Guid StockItemId;
     }
 }

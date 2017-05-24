@@ -6,18 +6,18 @@ namespace LinnworksAPI
     public class CalcBin
     {
         public Guid pkBinId;
-        public String TrackingNumber;
-        public String LabelId;
-        public Decimal? Weight;
+        public string TrackingNumber;
+        public string LabelId;
+        public decimal? Weight;
         public DateTime? PrintDate;
-        public Decimal? Cost;
+        public decimal? Cost;
         public Guid fkPackagingTypeId;
-        public Decimal? Width;
-        public Decimal? Height;
-        public Decimal? Depth;
-        public Decimal? PackagingWeight;
-        public Decimal? ItemWeight;
-        public Boolean ManualAdjust;
+        public decimal? Width;
+        public decimal? Height;
+        public decimal? Depth;
+        public decimal? PackagingWeight;
+        public decimal? ItemWeight;
+        public bool ManualAdjust;
         public List<CalcBinItem> Items;
         public SqlDataRecord DataRecordMetaData;
     }

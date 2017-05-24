@@ -5,17 +5,17 @@ namespace LinnworksAPI
     [Serializable]
     public class CustomerAddress
     {
-        public String EmailAddress;
-        public String Address1;
-        public String Address2;
-        public String Address3;
-        public String Town;
-        public String Region;
-        public String PostCode;
-        public String Country;
-        public String FullName;
-        public String Company;
-        public String PhoneNumber;
+        public string EmailAddress;
+        public string Address1;
+        public string Address2;
+        public string Address3;
+        public string Town;
+        public string Region;
+        public string PostCode;
+        public string Country;
+        public string FullName;
+        public string Company;
+        public string PhoneNumber;
         public Guid CountryId;
     }
 }

@@ -7,7 +7,7 @@ namespace LinnworksAPI
         public DateTime? DateFrom;
         public DateTime? DateTo;
         public DateTimeFieldFilterType Type;
-        public Int32? Value;
+        public int? Value;
         public FieldCode FieldCode;
     }
 }

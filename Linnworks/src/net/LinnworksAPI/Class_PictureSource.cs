@@ -5,7 +5,7 @@ namespace LinnworksAPI
     public class PictureSource
     {
         public Guid PictureId;
-        public String Source;
-        public Boolean IsMain;
+        public string Source;
+        public bool IsMain;
     }
 }

@@ -1,15 +1,13 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class RuleAction
     {
-        public Int32 pkActionId;
-        public String ActionName;
+        public int pkActionId;
+        public string ActionName;
         public ActionType ActionType;
-        public String ActionValue;
-        public Int32 fkConditionId;
-        public Int32 RuleVersion;
-        public Int32 fkRuleId;
+        public string ActionValue;
+        public int fkConditionId;
+        public int RuleVersion;
+        public int fkRuleId;
     }
 }

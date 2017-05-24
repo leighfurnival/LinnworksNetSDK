@@ -6,10 +6,10 @@ namespace LinnworksAPI
     {
         public Guid pkPurchaseItemId;
         public Guid pkPurchaseId;
-        public Int32? Quantity;
-        public Int32? PackQuantity;
-        public Int32? PackSize;
-        public Decimal? Cost;
-        public Decimal? TaxRate;
+        public int? Quantity;
+        public int? PackQuantity;
+        public int? PackSize;
+        public decimal? Cost;
+        public decimal? TaxRate;
     }
 }

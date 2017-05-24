@@ -6,13 +6,13 @@ namespace LinnworksAPI
     {
         public Guid fkSupplierId;
         public Guid fkLocationId;
-        public String ExternalInvoiceNumber;
-        public String Currency;
-        public String SupplierReferenceNumber;
+        public string ExternalInvoiceNumber;
+        public string Currency;
+        public string SupplierReferenceNumber;
         public DateTime DateOfPurchase;
         public DateTime QuotedDeliveryDate;
-        public Decimal PostagePaid;
-        public Decimal ShippingTaxRate;
-        public Decimal ConversionRate;
+        public decimal PostagePaid;
+        public decimal ShippingTaxRate;
+        public decimal ConversionRate;
     }
 }

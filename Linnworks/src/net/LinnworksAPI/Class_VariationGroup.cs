@@ -4,8 +4,8 @@ namespace LinnworksAPI
 {
     public class VariationGroup
     {
-        public String VariationSKU;
+        public string VariationSKU;
         public Guid pkVariationItemId;
-        public String VariationGroupName;
+        public string VariationGroupName;
     }
 }

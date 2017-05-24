@@ -5,8 +5,8 @@ namespace LinnworksAPI
     public class StockItemImageSimple
     {
         public Guid pkRowId;
-        public Boolean IsMain;
-        public Int32 SortOrder;
+        public bool IsMain;
+        public int SortOrder;
         public Guid StockItemId;
     }
 }

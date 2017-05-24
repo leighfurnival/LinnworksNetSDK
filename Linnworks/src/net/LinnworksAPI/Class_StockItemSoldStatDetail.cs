@@ -1,15 +1,14 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class StockItemSoldStatDetail
     {
-        public String Subsource;
-        public Int32 Quantity;
-        public Double Total;
-        public Double Cost;
-        public Double ProfitMargin;
+        public string Subsource;
+        public int Quantity;
+        public double Total;
+        public double Cost;
+        public double ProfitMargin;
         public List<StockItemSoldStatFinalDetail> Detail;
     }
 }

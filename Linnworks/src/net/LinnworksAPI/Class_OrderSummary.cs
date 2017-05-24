@@ -5,12 +5,12 @@ namespace LinnworksAPI
     public class OrderSummary
     {
         public Guid OrderId;
-        public Int32 NumOrderId;
+        public int NumOrderId;
         public DateTime ReceivedDate;
         public DateTime ProcessDate;
-        public String Source;
-        public String CustomerName;
-        public Int32 NumProducts;
+        public string Source;
+        public string CustomerName;
+        public int NumProducts;
         public Guid FulfillmentLocationId;
     }
 }

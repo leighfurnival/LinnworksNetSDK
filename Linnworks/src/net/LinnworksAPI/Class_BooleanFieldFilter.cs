@@ -1,10 +1,8 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class BooleanFieldFilter
     {
-        public Boolean Value;
+        public bool Value;
         public FieldCode FieldCode;
     }
 }

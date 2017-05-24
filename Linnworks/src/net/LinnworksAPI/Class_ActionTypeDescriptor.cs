@@ -1,11 +1,9 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class ActionTypeDescriptor
     {
         public ActionType Value;
-        public String DisplayName;
+        public string DisplayName;
         public DisplayType DisplayType;
     }
 }

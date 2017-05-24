@@ -5,10 +5,10 @@ namespace LinnworksAPI
 {
     public class ConfigChannelLocation
     {
-        public Int32 pkChannelLocationId;
-        public Boolean Deleted;
-        public String Identifier;
-        public String Name;
+        public int pkChannelLocationId;
+        public bool Deleted;
+        public string Identifier;
+        public string Name;
         public Guid OrderDownloadLocation;
         public List<Guid> InventorySyncLocations;
     }

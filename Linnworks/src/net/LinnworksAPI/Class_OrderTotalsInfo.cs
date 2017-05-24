@@ -5,15 +5,15 @@ namespace LinnworksAPI
     [Serializable]
     public class OrderTotalsInfo
     {
-        public Double Subtotal;
-        public Double PostageCost;
-        public Double Tax;
-        public Double TotalCharge;
-        public String PaymentMethod;
+        public double Subtotal;
+        public double PostageCost;
+        public double Tax;
+        public double TotalCharge;
+        public string PaymentMethod;
         public Guid PaymentMethodId;
-        public Double ProfitMargin;
-        public Double TotalDiscount;
-        public String Currency;
-        public Double CountryTaxRate;
+        public double ProfitMargin;
+        public double TotalDiscount;
+        public string Currency;
+        public double CountryTaxRate;
     }
 }

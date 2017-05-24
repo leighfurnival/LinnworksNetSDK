@@ -4,20 +4,20 @@ namespace LinnworksAPI
 {
     public class StockItemSupplierStat
     {
-        public Boolean IsDefault;
-        public String Supplier;
+        public bool IsDefault;
+        public string Supplier;
         public Guid SupplierID;
-        public String Code;
-        public String SupplierBarcode;
-        public Int32 LeadTime;
-        public Double PurchasePrice;
-        public Double MinPrice;
-        public Double MaxPrice;
-        public Double AveragePrice;
-        public Double AverageLeadTime;
-        public Int32 SupplierMinOrderQty;
-        public Int32 SupplierPackSize;
-        public String SupplierCurrency;
+        public string Code;
+        public string SupplierBarcode;
+        public int LeadTime;
+        public double PurchasePrice;
+        public double MinPrice;
+        public double MaxPrice;
+        public double AveragePrice;
+        public double AverageLeadTime;
+        public int SupplierMinOrderQty;
+        public int SupplierPackSize;
+        public string SupplierCurrency;
         public Guid StockItemId;
     }
 }

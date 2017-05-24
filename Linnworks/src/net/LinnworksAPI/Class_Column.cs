@@ -1,15 +1,13 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class Column
     {
         public ColumnNameType ColumnName;
-        public String DisplayName;
+        public string DisplayName;
         public GroupType Group;
         public FieldType Field;
         public SortDirectionType SortDirection;
-        public Double Width;
-        public Boolean IsEditable;
+        public double Width;
+        public bool IsEditable;
     }
 }

@@ -5,9 +5,9 @@ namespace LinnworksAPI
     public class StockItemTitle
     {
         public Guid pkRowId;
-        public String Source;
-        public String SubSource;
-        public String Title;
+        public string Source;
+        public string SubSource;
+        public string Title;
         public Guid StockItemId;
     }
 }

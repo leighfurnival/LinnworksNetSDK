@@ -5,8 +5,8 @@ namespace LinnworksAPI
     public class StockItemLocation
     {
         public Guid StockLocationId;
-        public String LocationName;
-        public String BinRack;
+        public string LocationName;
+        public string BinRack;
         public Guid StockItemId;
     }
 }

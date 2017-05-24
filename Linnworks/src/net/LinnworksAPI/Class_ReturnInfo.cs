@@ -4,38 +4,38 @@ namespace LinnworksAPI
 {
     public class ReturnInfo
     {
-        public Int32 pkReturnId;
+        public int pkReturnId;
         public ReturnType RowType;
-        public String ReturnReference;
+        public string ReturnReference;
         public Guid fkOrderId;
         public Guid fkOrderItemRowId;
-        public Int32 nOrderId;
-        public String SKU;
-        public String ItemTitle;
-        public String Reason;
-        public String ChannelReason;
-        public String ChannelReasonSec;
-        public String Category;
-        public Int32 ReturnQty;
+        public int nOrderId;
+        public string SKU;
+        public string ItemTitle;
+        public string Reason;
+        public string ChannelReason;
+        public string ChannelReasonSec;
+        public string Category;
+        public int ReturnQty;
         public Guid? fkReturnLocationId;
-        public Boolean Scrapped;
-        public Int32? ScrapQty;
-        public String LastState;
+        public bool Scrapped;
+        public int? ScrapQty;
+        public string LastState;
         public DateTime LastDate;
-        public Boolean Completed;
+        public bool Completed;
         public Guid? fkNewOrderId;
         public Guid? fkNewOrderItemRowId;
         public Guid? fkNewStockItemId;
-        public Int32? NewQty;
-        public Int32? NewOrderId;
-        public Boolean NewOrderCancelled;
-        public String NewSKU;
-        public String NewItemTitle;
+        public int? NewQty;
+        public int? NewOrderId;
+        public bool NewOrderCancelled;
+        public string NewSKU;
+        public string NewItemTitle;
         public DateTime? NewOrderProcessedOn;
-        public Double? AdditionalCost;
+        public double? AdditionalCost;
         public Guid? fkRefundRowId;
-        public Double? RefundedAmount;
-        public Double? PendingRefund;
+        public double? RefundedAmount;
+        public double? PendingRefund;
         public DateTime ReturnDate;
     }
 }

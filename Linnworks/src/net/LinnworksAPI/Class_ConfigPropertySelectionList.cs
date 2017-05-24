@@ -1,14 +1,12 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class ConfigPropertySelectionList<SelectStringValueOption, Guid>
     {
         public GetSelectionList<SelectStringValueOption> OnGetSelectionList;
-        public Boolean Loaded;
-        public Int32 pkPropertyId;
-        public Boolean IsChanged;
+        public bool Loaded;
+        public int pkPropertyId;
+        public bool IsChanged;
         public Guid PropertyValue;
-        public String PropertyType;
+        public string PropertyType;
     }
 }

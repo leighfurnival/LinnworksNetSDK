@@ -6,7 +6,7 @@ namespace LinnworksAPI
     {
         public Guid StockItemId;
         public Guid ImageId;
-        public String ImageUrl;
-        public String ImageThumbnailUrl;
+        public string ImageUrl;
+        public string ImageThumbnailUrl;
     }
 }

@@ -1,21 +1,20 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class FieldDescriptor
     {
-        public String Name;
-        public String FieldName;
-        public String FieldGroup;
-        public Boolean IsASet;
+        public string Name;
+        public string FieldName;
+        public string FieldGroup;
+        public bool IsASet;
         public List<EvaluatorGroup> ValidEvaluatorGroups;
-        public String Key;
-        public String KeyDisplayName;
-        public Boolean HasKeyOptions;
-        public Boolean HasAttributeKey;
-        public Boolean HasOptions;
+        public string Key;
+        public string KeyDisplayName;
+        public bool HasKeyOptions;
+        public bool HasAttributeKey;
+        public bool HasOptions;
         public DisplayType DisplayType;
-        public Boolean ExactMatchRequired;
+        public bool ExactMatchRequired;
     }
 }

@@ -7,17 +7,17 @@ namespace LinnworksAPI
     {
         public Guid PkTransferItemId;
         public Guid FkStockItemId;
-        public String SKU;
-        public String Barcode;
-        public String ItemTitle;
-        public Int32 RequestedQuantity;
-        public Int32 SentQuantity;
-        public Int32? ReceivedQuantity;
-        public Int32 InFromLocationQuantity;
-        public Int32 DueFromLocationQuantity;
-        public Int32 InToLocationQuantity;
-        public Int32 ItemNoteCount;
-        public String BinRackNumber;
+        public string SKU;
+        public string Barcode;
+        public string ItemTitle;
+        public int RequestedQuantity;
+        public int SentQuantity;
+        public int? ReceivedQuantity;
+        public int InFromLocationQuantity;
+        public int DueFromLocationQuantity;
+        public int InToLocationQuantity;
+        public int ItemNoteCount;
+        public string BinRackNumber;
         public Guid PkBinId;
         public List<WarehouseTransferItemNote> ItemNotes;
     }

@@ -5,10 +5,10 @@ namespace LinnworksAPI
     public class PurchaseOrderNote
     {
         public Guid pkPurchaseOrderNoteId;
-        public String Note;
+        public string Note;
         public DateTime NoteDateTime;
-        public String UserName;
-        public String NoteDate;
-        public String NoteTime;
+        public string UserName;
+        public string NoteDate;
+        public string NoteTime;
     }
 }

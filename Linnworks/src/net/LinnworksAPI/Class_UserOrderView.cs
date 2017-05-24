@@ -5,10 +5,10 @@ namespace LinnworksAPI
     public class UserOrderView
     {
         public DateTime ModifiedDateTime;
-        public Int32 pkViewId;
-        public String ViewName;
-        public String OwnerName;
-        public Boolean? AllowModify;
-        public String JSONDetail;
+        public int pkViewId;
+        public string ViewName;
+        public string OwnerName;
+        public bool? AllowModify;
+        public string JSONDetail;
     }
 }

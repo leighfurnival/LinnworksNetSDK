@@ -1,11 +1,10 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class ConfigRule
     {
-        public String FieldName;
+        public string FieldName;
         public List<PropertyRule> Rules;
     }
 }

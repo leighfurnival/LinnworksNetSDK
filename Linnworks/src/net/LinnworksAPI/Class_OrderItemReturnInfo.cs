@@ -7,20 +7,20 @@ namespace LinnworksAPI
     {
         public Guid fkOrderItemRowId;
         public Guid ParentRowId;
-        public Int32 ReturnableQty;
-        public Int32 OrderQty;
-        public Int32 ReturnedQty;
-        public String SKU;
-        public String ItemTitle;
-        public Double UnitValue;
-        public Double TaxRate;
-        public Boolean TaxCostInclusive;
-        public String Currency;
-        public Boolean IsCompositeParent;
-        public Boolean IsPartialCompositeReturn;
-        public Int32 ParentRatio;
+        public int ReturnableQty;
+        public int OrderQty;
+        public int ReturnedQty;
+        public string SKU;
+        public string ItemTitle;
+        public double UnitValue;
+        public double TaxRate;
+        public bool TaxCostInclusive;
+        public string Currency;
+        public bool IsCompositeParent;
+        public bool IsPartialCompositeReturn;
+        public int ParentRatio;
         public List<OrderItemReturnInfo> ChildItems;
         public Guid? pkStockItemId;
-        public Int32 ResentQty;
+        public int ResentQty;
     }
 }

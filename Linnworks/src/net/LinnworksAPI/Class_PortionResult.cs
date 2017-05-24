@@ -6,8 +6,8 @@ namespace LinnworksAPI
     public class PortionResult<InventoryItem>
     {
         public List<InventoryItem> Items;
-        public Int32 TotalItems;
-        public Int32 StartIndex;
+        public int TotalItems;
+        public int StartIndex;
         public Guid Token;
     }
 }

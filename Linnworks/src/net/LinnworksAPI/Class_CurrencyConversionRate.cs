@@ -1,10 +1,8 @@
-using System;
-
 namespace LinnworksAPI
 {
     public class CurrencyConversionRate
     {
-        public String Currency;
-        public Double ConversionRate;
+        public string Currency;
+        public double ConversionRate;
     }
 }

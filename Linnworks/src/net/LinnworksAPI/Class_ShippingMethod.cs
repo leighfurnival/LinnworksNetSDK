@@ -1,11 +1,10 @@
-using System;
 using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
     public class ShippingMethod
     {
-        public String Vendor;
+        public string Vendor;
         public List<PostageService> PostalServices;
     }
 }

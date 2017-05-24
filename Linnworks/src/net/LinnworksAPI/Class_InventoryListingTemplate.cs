@@ -4,12 +4,12 @@ namespace LinnworksAPI
 {
     public class InventoryListingTemplate
     {
-        public Boolean IsErrorMsg;
-        public String Status;
+        public bool IsErrorMsg;
+        public string Status;
         public DateTime? CreatedDate;
         public Guid InventoryItemId;
-        public String Source;
-        public String SubSource;
-        public String CombinedSource;
+        public string Source;
+        public string SubSource;
+        public string CombinedSource;
     }
 }
