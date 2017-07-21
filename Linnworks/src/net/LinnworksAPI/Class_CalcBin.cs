@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+//ReSharper disable UnusedMember.Global
 namespace LinnworksAPI
 {
     public class CalcBin

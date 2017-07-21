@@ -1,5 +1,6 @@
 namespace LinnworksAPI
 {
+    //ReSharper disable UnusedMember.Global
     public class ChannelPostalService
     {
         public int fkChannelId;

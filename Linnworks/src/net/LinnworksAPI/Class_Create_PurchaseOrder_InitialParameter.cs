@@ -2,6 +2,7 @@ using System;
 
 namespace LinnworksAPI
 {
+    //ReSharper disable UnusedMember.Global
     public class Create_PurchaseOrder_InitialParameter
     {
         public Guid fkSupplierId;

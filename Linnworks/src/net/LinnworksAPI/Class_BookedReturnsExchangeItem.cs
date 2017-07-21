@@ -1,5 +1,5 @@
 using System;
-
+//ReSharper disable UnusedMember.Global
 namespace LinnworksAPI
 {
     public class BookedReturnsExchangeItem

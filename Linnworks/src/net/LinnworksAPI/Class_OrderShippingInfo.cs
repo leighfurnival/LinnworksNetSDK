@@ -2,6 +2,7 @@ using System;
 
 namespace LinnworksAPI
 {
+    //ReSharper disable UnusedMember.Global
     [Serializable]
     public class OrderShippingInfo
     {

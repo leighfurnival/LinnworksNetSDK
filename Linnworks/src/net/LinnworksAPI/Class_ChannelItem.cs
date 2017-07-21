@@ -1,5 +1,6 @@
 ﻿namespace LinnworksAPI
 {
+    //ReSharper disable UnusedMember.Global
     public class ChannelItem
     {
         public string SKU { get; set; }

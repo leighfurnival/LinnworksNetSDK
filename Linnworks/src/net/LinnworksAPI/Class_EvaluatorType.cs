@@ -3,6 +3,7 @@ using Newtonsoft.Json.Converters;
 
 namespace LinnworksAPI
 {
+    //ReSharper disable UnusedMember.Global
     [JsonConverter(typeof(StringEnumConverter))]
     public enum EvaluatorType
     {

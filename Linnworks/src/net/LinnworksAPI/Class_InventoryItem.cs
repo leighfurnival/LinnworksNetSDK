@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
+    //ReSharper disable UnusedMember.Global
     public class InventoryItem
     {
         public Guid Id;

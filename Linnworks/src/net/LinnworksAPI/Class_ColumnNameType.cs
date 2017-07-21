@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-
+//ReSharper disable UnusedMember.Global
 namespace LinnworksAPI
 {
     [JsonConverter(typeof(StringEnumConverter))]

@@ -1,5 +1,6 @@
 ﻿namespace LinnworksAPI
 {
+    //ReSharper disable UnusedMember.Global
     public class ChannelOptions
     {
         public int ChannelId { get; set; }

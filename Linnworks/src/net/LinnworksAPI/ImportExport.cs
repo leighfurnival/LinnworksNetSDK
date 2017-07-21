@@ -1,6 +1,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+// ReSharper disable UnusedMember.Global
 
 namespace LinnworksAPI
 {

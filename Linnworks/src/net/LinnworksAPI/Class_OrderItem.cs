@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
+    //ReSharper disable UnusedMember.Global
     [Serializable]
     public class OrderItem
     {
