@@ -13,17 +13,10 @@ namespace LinnworksAPI
         public string Reason;
         public bool Actioned;
         public DateTime? ActionDate;
-<<<<<<< HEAD
         public string ReturnReference;
         public double? Cost;
         public RefundStatus RefundStatus;
         public bool IgnoredValidation;
-=======
-        public String ReturnReference;
-        public Double? Cost;
-        public PostSaleStatusType RefundStatus;
-        public Boolean IgnoredValidation;
->>>>>>> refs/remotes/LinnSystems/master
         public Guid? fkOrderItemRowId;
         public bool ShouldSerializeChannelReason;
         public string ChannelReason;

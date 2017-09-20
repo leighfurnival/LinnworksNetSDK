@@ -8,31 +8,7 @@ namespace LinnworksAPI
     {
         private static JsonSerializerSettings serializerSettings = new JsonSerializerSettings() { DateFormatString = "yyyy-MM-ddTHH:mm:ss.ffZ" };
 
-<<<<<<< HEAD
         public static UserOrderView GetOrderView(int pkViewId, bool markAsLatestViewed, string ApiToken, string ApiServer)
-=======
-        public static UpdateOrderItemResult AddCoupon(Guid orderId, String barcode, CouponValidationResult couponData, Guid fulfilmentCenter, String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<UpdateOrderItemResult>(Factory.GetResponse("Orders/AddCoupon", "orderId=" + orderId + "&barcode=" + barcode + "&couponData=" + Newtonsoft.Json.JsonConvert.SerializeObject(couponData, serializerSettings) + "&fulfilmentCenter=" + fulfilmentCenter + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static void UpdateBillingAddress(Guid orderId, Address billingAddress, String ApiToken, String ApiServer)
-        {
-            Factory.GetResponse("Orders/UpdateBillingAddress", "orderId=" + orderId + "&billingAddress=" + Newtonsoft.Json.JsonConvert.SerializeObject(billingAddress, serializerSettings) + "", ApiToken, ApiServer);
-        }
-
-        public static void SetAdditionalInfo(Guid orderId, Guid rowId, OrderItemOption additionalInfo, String ApiToken, String ApiServer)
-        {
-            Factory.GetResponse("Orders/SetAdditionalInfo", "orderId=" + orderId + "&rowId=" + rowId + "&additionalInfo=" + Newtonsoft.Json.JsonConvert.SerializeObject(additionalInfo, serializerSettings) + "", ApiToken, ApiServer);
-        }
-
-        public static List<UserOrderView> GetOrderViews(String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<UserOrderView>>(Factory.GetResponse("Orders/GetOrderViews", "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static UserOrderView GetOrderView(Int32 pkViewId, Boolean markAsLatestViewed, String ApiToken, String ApiServer)
->>>>>>> refs/remotes/LinnSystems/master
         {
             return JsonConvert.DeserializeObject<UserOrderView>(Factory.GetResponse("Orders/GetOrderView", "pkViewId=" + pkViewId + "&markAsLatestViewed=" + markAsLatestViewed + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
@@ -59,11 +35,7 @@ namespace LinnworksAPI
 
         public static Guid? CreateNewItemAndLink(Guid pkStockItemId, string itemTitle, string source, string subSource, string channelSKU, Guid? locationId, int? initialQuantity, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<Guid?>(Factory.GetResponse("Orders/CreateNewItemAndLink", "pkStockItemId=" + pkStockItemId + "&itemTitle=" + itemTitle + "&source=" + source + "&subSource=" + subSource + "&channelSKU=" + channelSKU + "&locationId=" + JsonConvert.SerializeObject(locationId, serializerSettings) + "&initialQuantity=" + JsonConvert.SerializeObject(initialQuantity, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<Guid?>(Factory.GetResponse("Orders/CreateNewItemAndLink", "pkStockItemId=" + pkStockItemId + "&itemTitle=" + itemTitle + "&source=" + source + "&subSource=" + subSource + "&channelSKU=" + channelSKU + "&locationId=" + locationId + "&initialQuantity=" + initialQuantity + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<OrderPackagingSplit> GetOrderPackagingSplit(Guid orderId, string ApiToken, string ApiServer)
@@ -78,35 +50,17 @@ namespace LinnworksAPI
 
         public static Guid? GetOpenOrderIdByOrderOrReferenceId(string orderOrReferenceId, FieldsFilter filters, Guid? locationId, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<Guid?>(Factory.GetResponse("Orders/GetOpenOrderIdByOrderOrReferenceId", "orderOrReferenceId=" + orderOrReferenceId + "&filters=" + JsonConvert.SerializeObject(filters, serializerSettings) + "&locationId=" + JsonConvert.SerializeObject(locationId, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
         public static KeyValuePair<OrderSummary, string> GetOpenOrderIdByOrderOrReferenceIdAndProcess(string orderOrReferenceId, Guid fulfilmentCenter, FieldsFilter filters, string ApiToken, string ApiServer)
         {
             return JsonConvert.DeserializeObject<KeyValuePair<OrderSummary, string>>(Factory.GetResponse("Orders/GetOpenOrderIdByOrderOrReferenceIdAndProcess", "orderOrReferenceId=" + orderOrReferenceId + "&fulfilmentCenter=" + fulfilmentCenter + "&filters=" + JsonConvert.SerializeObject(filters, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<Guid?>(Factory.GetResponse("Orders/GetOpenOrderIdByOrderOrReferenceId", "orderOrReferenceId=" + orderOrReferenceId + "&filters=" + Newtonsoft.Json.JsonConvert.SerializeObject(filters, serializerSettings) + "&locationId=" + locationId + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static ProcessOrderByOrderIdOrReferenceResponse ProcessOrderByOrderOrReferenceId(ProcessOrderByOrderIdOrReferenceRequest request, String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<ProcessOrderByOrderIdOrReferenceResponse>(Factory.GetResponse("Orders/ProcessOrderByOrderOrReferenceId", "request=" + Newtonsoft.Json.JsonConvert.SerializeObject(request, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static KeyValuePair<OrderSummary, String> GetOpenOrderIdByOrderOrReferenceIdAndProcess(String orderOrReferenceId, Guid fulfilmentCenter, FieldsFilter filters, Boolean batchScanned, String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<KeyValuePair<OrderSummary, String>>(Factory.GetResponse("Orders/GetOpenOrderIdByOrderOrReferenceIdAndProcess", "orderOrReferenceId=" + orderOrReferenceId + "&fulfilmentCenter=" + fulfilmentCenter + "&filters=" + Newtonsoft.Json.JsonConvert.SerializeObject(filters, serializerSettings) + "&batchScanned=" + batchScanned + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static KeyValuePair<List<OrderSummary>, string> GetOpenOrdersByItemBarcode(string productBarcode, FieldsFilter filters, Guid? locationId, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<KeyValuePair<List<OrderSummary>, string>>(Factory.GetResponse("Orders/GetOpenOrdersByItemBarcode", "productBarcode=" + productBarcode + "&filters=" + JsonConvert.SerializeObject(filters, serializerSettings) + "&locationId=" + JsonConvert.SerializeObject(locationId, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<KeyValuePair<List<OrderSummary>, String>>(Factory.GetResponse("Orders/GetOpenOrdersByItemBarcode", "productBarcode=" + productBarcode + "&filters=" + Newtonsoft.Json.JsonConvert.SerializeObject(filters, serializerSettings) + "&locationId=" + locationId + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<OrderDetails> GetOrderDetailsByReferenceId(string ReferenceId, string ApiToken, string ApiServer)
@@ -149,42 +103,19 @@ namespace LinnworksAPI
             return JsonConvert.DeserializeObject<CalcOrderHeader>(Factory.GetResponse("Orders/SetOrderPackaging", "request=" + JsonConvert.SerializeObject(request, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
-<<<<<<< HEAD
         public static Guid GetUserLocationId(string ApiToken, string ApiServer)
         {
             return JsonConvert.DeserializeObject<Guid>(Factory.GetResponse("Orders/GetUserLocationId", "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
         public static void SetUserLocationId(Guid locationId, string ApiToken, string ApiServer)
-=======
-        public static List<OrderItemBatch> GetOrderItemBatchsByOrderId(OrderItemBatchInfo parameters, String ApiToken, String ApiServer)
         {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<OrderItemBatch>>(Factory.GetResponse("Orders/GetOrderItemBatchsByOrderId", "parameters=" + Newtonsoft.Json.JsonConvert.SerializeObject(parameters, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static List<StockItemBatch> GetAllAvailableOrderItemBatchsByOrderId(AvailableOrderItemBatchsInfo parameters, String ApiToken, String ApiServer)
->>>>>>> refs/remotes/LinnSystems/master
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<StockItemBatch>>(Factory.GetResponse("Orders/GetAllAvailableOrderItemBatchsByOrderId", "parameters=" + Newtonsoft.Json.JsonConvert.SerializeObject(parameters, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static List<Guid> CreateOrders(List<ChannelOrder> orders, String location, String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<Guid>>(Factory.GetResponse("Orders/CreateOrders", "orders=" + Newtonsoft.Json.JsonConvert.SerializeObject(orders, serializerSettings) + "&location=" + location + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static Guid GetUserLocationId(String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<Guid>(Factory.GetResponse("Orders/GetUserLocationId", "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            Factory.GetResponse("Orders/SetUserLocationId", "locationId=" + locationId + "", ApiToken, ApiServer);
         }
 
         public static GenericPagedResult<OpenOrder> GetOpenOrders(int entriesPerPage, int pageNumber, FieldsFilter filters, List<FieldSorting> sorting, Guid? fulfilmentCenter, string additionalFilter, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<GenericPagedResult<OpenOrder>>(Factory.GetResponse("Orders/GetOpenOrders", "entriesPerPage=" + entriesPerPage + "&pageNumber=" + pageNumber + "&filters=" + JsonConvert.SerializeObject(filters, serializerSettings) + "&sorting=" + JsonConvert.SerializeObject(sorting, serializerSettings) + "&fulfilmentCenter=" + JsonConvert.SerializeObject(fulfilmentCenter, serializerSettings) + "&additionalFilter=" + additionalFilter + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<GenericPagedResult<OpenOrder>>(Factory.GetResponse("Orders/GetOpenOrders", "entriesPerPage=" + entriesPerPage + "&pageNumber=" + pageNumber + "&filters=" + Newtonsoft.Json.JsonConvert.SerializeObject(filters, serializerSettings) + "&sorting=" + Newtonsoft.Json.JsonConvert.SerializeObject(sorting, serializerSettings) + "&fulfilmentCenter=" + fulfilmentCenter + "&additionalFilter=" + additionalFilter + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<Guid> GetAllOpenOrders(FieldsFilter filters, List<FieldSorting> sorting, Guid fulfilmentCenter, string additionalFilter, string ApiToken, string ApiServer)
@@ -207,27 +138,14 @@ namespace LinnworksAPI
             return JsonConvert.DeserializeObject<List<Guid>>(Factory.GetResponse("Orders/SetInvoicesPrinted", "orderIds=" + JsonConvert.SerializeObject(orderIds, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
-<<<<<<< HEAD
         public static OrderItem GetOrderItemComposition(Guid orderId, Guid stockItemId, Guid fulfilmentCenter, string ApiToken, string ApiServer)
-=======
-        public static List<Guid> RunRulesEngine(Guid orderIds, String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<Guid>>(Factory.GetResponse("Orders/RunRulesEngine", "orderIds=" + Newtonsoft.Json.JsonConvert.SerializeObject(orderIds, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static OrderItem GetOrderItemComposition(Guid orderId, Guid stockItemId, Guid fulfilmentCenter, String ApiToken, String ApiServer)
->>>>>>> refs/remotes/LinnSystems/master
         {
             return JsonConvert.DeserializeObject<OrderItem>(Factory.GetResponse("Orders/GetOrderItemComposition", "orderId=" + orderId + "&stockItemId=" + stockItemId + "&fulfilmentCenter=" + fulfilmentCenter + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
         public static List<Guid> ChangeOrderTag(List<Guid> orderIds, int? tag, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<List<Guid>>(Factory.GetResponse("Orders/ChangeOrderTag", "orderIds=" + JsonConvert.SerializeObject(orderIds, serializerSettings) + "&tag=" + JsonConvert.SerializeObject(tag, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<Guid>>(Factory.GetResponse("Orders/ChangeOrderTag", "orderIds=" + Newtonsoft.Json.JsonConvert.SerializeObject(orderIds, serializerSettings) + "&tag=" + tag + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<OrderFolder> GetAvailableFolders(string ApiToken, string ApiServer)
@@ -330,16 +248,7 @@ namespace LinnworksAPI
             return JsonConvert.DeserializeObject<List<string>>(Factory.GetResponse("Orders/GetExtendedPropertyTypes", "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
-<<<<<<< HEAD
         public static List<ExtendedProperty> SetExtendedProperties(Guid orderId, ExtendedProperty extendedProperties, string ApiToken, string ApiServer)
-=======
-        public static List<String> GetExtendedPropertyNames(String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<String>>(Factory.GetResponse("Orders/GetExtendedPropertyNames", "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static List<ExtendedProperty> SetExtendedProperties(Guid orderId, ExtendedProperty extendedProperties, String ApiToken, String ApiServer)
->>>>>>> refs/remotes/LinnSystems/master
         {
             return JsonConvert.DeserializeObject<List<ExtendedProperty>>(Factory.GetResponse("Orders/SetExtendedProperties", "orderId=" + orderId + "&extendedProperties=" + JsonConvert.SerializeObject(extendedProperties, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
@@ -351,20 +260,12 @@ namespace LinnworksAPI
 
         public static OpenOrder GetOrder(Guid orderId, Guid? fulfilmentLocationId, bool loadItems, bool loadAdditionalInfo, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<OpenOrder>(Factory.GetResponse("Orders/GetOrder", "orderId=" + orderId + "&fulfilmentLocationId=" + JsonConvert.SerializeObject(fulfilmentLocationId, serializerSettings) + "&loadItems=" + loadItems + "&loadAdditionalInfo=" + loadAdditionalInfo + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<OpenOrder>(Factory.GetResponse("Orders/GetOrder", "orderId=" + orderId + "&fulfilmentLocationId=" + fulfilmentLocationId + "&loadItems=" + loadItems + "&loadAdditionalInfo=" + loadAdditionalInfo + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<OpenOrder> GetOrders(List<Guid> ordersIds, Guid? fulfilmentLocationId, bool loadItems, bool loadAdditionalInfo, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<List<OpenOrder>>(Factory.GetResponse("Orders/GetOrders", "ordersIds=" + JsonConvert.SerializeObject(ordersIds, serializerSettings) + "&fulfilmentLocationId=" + JsonConvert.SerializeObject(fulfilmentLocationId, serializerSettings) + "&loadItems=" + loadItems + "&loadAdditionalInfo=" + loadAdditionalInfo + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<OpenOrder>>(Factory.GetResponse("Orders/GetOrders", "ordersIds=" + Newtonsoft.Json.JsonConvert.SerializeObject(ordersIds, serializerSettings) + "&fulfilmentLocationId=" + fulfilmentLocationId + "&loadItems=" + loadItems + "&loadAdditionalInfo=" + loadAdditionalInfo + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<OrderAuditTrail> GetOrderAuditTrail(Guid orderId, string ApiToken, string ApiServer)
@@ -377,16 +278,7 @@ namespace LinnworksAPI
             return JsonConvert.DeserializeObject<List<OrderNote>>(Factory.GetResponse("Orders/GetOrderNotes", "orderId=" + orderId + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
-<<<<<<< HEAD
         public static void SetOrderNotes(Guid orderId, List<OrderNote> orderNotes, string ApiToken, string ApiServer)
-=======
-        public static List<OrderNoteType> GetOrderNoteTypes(String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<OrderNoteType>>(Factory.GetResponse("Orders/GetOrderNoteTypes", "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static void SetOrderNotes(Guid orderId, List<OrderNote> orderNotes, String ApiToken, String ApiServer)
->>>>>>> refs/remotes/LinnSystems/master
         {
             Factory.GetResponse("Orders/SetOrderNotes", "orderId=" + orderId + "&orderNotes=" + JsonConvert.SerializeObject(orderNotes, serializerSettings) + "", ApiToken, ApiServer);
         }
@@ -476,29 +368,14 @@ namespace LinnworksAPI
             return JsonConvert.DeserializeObject<OpenOrder>(Factory.GetResponse("Orders/MergeOrders", "ordersToMerge=" + JsonConvert.SerializeObject(ordersToMerge, serializerSettings) + "&fulfilmentCenter=" + fulfilmentCenter + "&pkPostalServiceId=" + pkPostalServiceId + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
-<<<<<<< HEAD
         public static ProcessOrderResult ProcessOrder(Guid orderId, bool scanPerformed, Guid? locationId, string ApiToken, string ApiServer)
         {
             return JsonConvert.DeserializeObject<ProcessOrderResult>(Factory.GetResponse("Orders/ProcessOrder", "orderId=" + orderId + "&scanPerformed=" + scanPerformed + "&locationId=" + JsonConvert.SerializeObject(locationId, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-        public static ProcessOrderResult ProcessOrder(Guid orderId, Boolean scanPerformed, Guid? locationId, Boolean allowZeroAndNegativeBatchQty, String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<ProcessOrderResult>(Factory.GetResponse("Orders/ProcessOrder", "orderId=" + orderId + "&scanPerformed=" + scanPerformed + "&locationId=" + locationId + "&allowZeroAndNegativeBatchQty=" + allowZeroAndNegativeBatchQty + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
-        public static void ProcessOrder_RequiredBatchScans(BatchAssignmentForOrderItems BatchAssignment, String ApiToken, String ApiServer)
-        {
-            Factory.GetResponse("Orders/ProcessOrder_RequiredBatchScans", "BatchAssignment=" + Newtonsoft.Json.JsonConvert.SerializeObject(BatchAssignment, serializerSettings) + "", ApiToken, ApiServer);
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<ProcessOrderResult> ProcessOrdersInBatch(List<Guid> ordersIds, Guid? locationId, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<List<ProcessOrderResult>>(Factory.GetResponse("Orders/ProcessOrdersInBatch", "ordersIds=" + JsonConvert.SerializeObject(ordersIds, serializerSettings) + "&locationId=" + JsonConvert.SerializeObject(locationId, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<ProcessOrderResult>>(Factory.GetResponse("Orders/ProcessOrdersInBatch", "ordersIds=" + Newtonsoft.Json.JsonConvert.SerializeObject(ordersIds, serializerSettings) + "&locationId=" + locationId + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static ProcessOrderResult ProcessFulfilmentCentreOrder(Guid orderId, string ApiToken, string ApiServer)
@@ -516,15 +393,9 @@ namespace LinnworksAPI
             return JsonConvert.DeserializeObject<UpdateTotalsResult>(Factory.GetResponse("Orders/SetOrderShippingInfo", "orderId=" + orderId + "&info=" + JsonConvert.SerializeObject(info, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
-<<<<<<< HEAD
         public static void SetOrderCustomerInfo(Guid orderId, OrderCustomerInfo info, bool? saveToCrm, string ApiToken, string ApiServer)
         {
             Factory.GetResponse("Orders/SetOrderCustomerInfo", "orderId=" + orderId + "&info=" + JsonConvert.SerializeObject(info, serializerSettings) + "&saveToCrm=" + JsonConvert.SerializeObject(saveToCrm, serializerSettings) + "", ApiToken, ApiServer);
-=======
-        public static OrderTotalsInfo SetOrderCustomerInfo(Guid orderId, OrderCustomerInfo info, Boolean? saveToCrm, String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<OrderTotalsInfo>(Factory.GetResponse("Orders/SetOrderCustomerInfo", "orderId=" + orderId + "&info=" + Newtonsoft.Json.JsonConvert.SerializeObject(info, serializerSettings) + "&saveToCrm=" + saveToCrm + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static void SetOrderTotalsInfo(Guid orderId, OrderTotalsInfo info, string ApiToken, string ApiServer)
@@ -536,7 +407,6 @@ namespace LinnworksAPI
         {
             return JsonConvert.DeserializeObject<CouponValidationResult>(Factory.GetResponse("Orders/ValidateCoupon", "orderId=" + orderId + "&barcode=" + barcode + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
-<<<<<<< HEAD
 
         public static UpdateOrderItemResult AddCoupon(Guid orderId, string barcode, CouponValidationResult couponData, Guid fulfilmentCenter, string ApiToken, string ApiServer)
         {
@@ -557,7 +427,5 @@ namespace LinnworksAPI
         {
             return JsonConvert.DeserializeObject<List<UserOrderView>>(Factory.GetResponse("Orders/GetOrderViews", "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
-=======
->>>>>>> refs/remotes/LinnSystems/master
     }
 }

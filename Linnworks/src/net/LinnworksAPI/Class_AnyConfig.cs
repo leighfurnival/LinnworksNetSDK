@@ -5,7 +5,6 @@ namespace LinnworksAPI
 {
     public class AnyConfig
     {
-<<<<<<< HEAD
         public ConfigItem<bool> Enabled;
         public ConfigItem<string> ChannelTag;
         public ConfigChannelLocationBinding ChannelLocationBinding;
@@ -15,22 +14,6 @@ namespace LinnworksAPI
         public ConfigPropertySelectionList<SelectStringValueOption, Guid> OrderSaveLocation;
         public ConfigProperty<bool> HidesHeaderAttributes;
         public ConfigItem<bool> InventorySync;
-=======
-        public ConfigItem<String> SourceVersion;
-        public ConfigItem<Boolean> Enabled;
-        public ConfigItem<String> ChannelTag;
-        public ConfigChannelLocationBinding ChannelLocationBinding;
-        public ConfigItem<Boolean> IsMultiLocation;
-        public ConfigItem<Boolean> DespatchNotes;
-        public ConfigItem<Boolean> CancellationNotes;
-        public ConfigItem<Boolean> RefundNotes;
-        public ConfigItem<Boolean> ReturnNotes;
-        public ConfigItem<DateTime> OrderSyncDate;
-        public ConfigPropertySelectionList<SelectStringValueOption, Guid> OrderSaveLocation;
-        public ConfigPropertySelectionList<SelectStringValueOption, String> ConfigDiscount;
-        public ConfigProperty<Boolean> HidesHeaderAttributes;
-        public ConfigItem<Boolean> InventorySync;
->>>>>>> refs/remotes/LinnSystems/master
         public ConfigStockLocationBinding StockLocationBinding;
         public ConfigItem<bool> PriceChange;
         public ConfigItem<int> MaxListed;
@@ -43,7 +26,6 @@ namespace LinnworksAPI
         public bool IsHeaderOnly;
         public bool IsHidden;
         public ConfigItemExternal DynamicProperties;
-        public DiscountType ConfigDiscountTyped;
         public ConfigPostalServiceMapping PostalServiceMapping;
         public ConfigPaymentMethodMapping PaymentMethodMapping;
         public int PkChannelId;

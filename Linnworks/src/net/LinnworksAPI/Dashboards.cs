@@ -10,11 +10,7 @@ namespace LinnworksAPI
 
         public static List<LowStockLevel> GetLowStockLevel(Guid? locationId, int? numRows, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<List<LowStockLevel>>(Factory.GetResponse("Dashboards/GetLowStockLevel", "locationId=" + JsonConvert.SerializeObject(locationId, serializerSettings) + "&numRows=" + JsonConvert.SerializeObject(numRows, serializerSettings) + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<LowStockLevel>>(Factory.GetResponse("Dashboards/GetLowStockLevel", "locationId=" + locationId + "&numRows=" + numRows + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<PerfomanceData> GetPerformanceTableData(int period, string ApiToken, string ApiServer)

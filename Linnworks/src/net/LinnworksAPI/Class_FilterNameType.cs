@@ -32,13 +32,5 @@ namespace LinnworksAPI
         Channel,
         CreatedDate,
         ModifiedDate,
-        SerialNumberScanRequired,
-        BatchNumberScanRequired,
-        BatchType,
-        BatchNumber,
-        Weight,
-        DimHeight,
-        DimWidth,
-        DimDepth,
     }
 }

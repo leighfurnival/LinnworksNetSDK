@@ -74,11 +74,7 @@ namespace LinnworksAPI
 
         public static bool CheckConditionNameExists(int fkRuleId, int? fkConditionId, int? excludeConditionId, string conditionName, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<bool>(Factory.GetResponse("RulesEngine/CheckConditionNameExists", "fkRuleId=" + fkRuleId + "&fkConditionId=" + JsonConvert.SerializeObject(fkConditionId, serializerSettings) + "&excludeConditionId=" + JsonConvert.SerializeObject(excludeConditionId, serializerSettings) + "&conditionName=" + conditionName + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<Boolean>(Factory.GetResponse("RulesEngine/CheckConditionNameExists", "fkRuleId=" + fkRuleId + "&fkConditionId=" + fkConditionId + "&excludeConditionId=" + excludeConditionId + "&conditionName=" + conditionName + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<string> GetActionOptions(ActionType type, string ApiToken, string ApiServer)
@@ -178,11 +174,7 @@ namespace LinnworksAPI
 
         public static RuleConditionHeader CopyCondition(int pkRuleId, int? targetParentConditionId, int pkConditionId, bool includeChildren, bool includeActions, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             return JsonConvert.DeserializeObject<RuleConditionHeader>(Factory.GetResponse("RulesEngine/CopyCondition", "pkRuleId=" + pkRuleId + "&targetParentConditionId=" + JsonConvert.SerializeObject(targetParentConditionId, serializerSettings) + "&pkConditionId=" + pkConditionId + "&includeChildren=" + includeChildren + "&includeActions=" + includeActions + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-=======
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<RuleConditionHeader>(Factory.GetResponse("RulesEngine/CopyCondition", "pkRuleId=" + pkRuleId + "&targetParentConditionId=" + targetParentConditionId + "&pkConditionId=" + pkConditionId + "&includeChildren=" + includeChildren + "&includeActions=" + includeActions + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static RuleAction CopyAction(int pkRuleId, int targetParentConditionId, int pkActionId, string ApiToken, string ApiServer)

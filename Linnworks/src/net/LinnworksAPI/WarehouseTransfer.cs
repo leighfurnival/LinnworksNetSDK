@@ -115,11 +115,7 @@ namespace LinnworksAPI
 
         public static void ChangeTransferItemReceivedQuantity(Guid pkTransferId, Guid pkBinId, Guid pkTransferItemId, int? Quantity, string ApiToken, string ApiServer)
         {
-<<<<<<< HEAD
             Factory.GetResponse("WarehouseTransfer/ChangeTransferItemReceivedQuantity", "pkTransferId=" + pkTransferId + "&pkBinId=" + pkBinId + "&pkTransferItemId=" + pkTransferItemId + "&Quantity=" + JsonConvert.SerializeObject(Quantity, serializerSettings) + "", ApiToken, ApiServer);
-=======
-            Factory.GetResponse("WarehouseTransfer/ChangeTransferItemReceivedQuantity", "pkTransferId=" + pkTransferId + "&pkBinId=" + pkBinId + "&pkTransferItemId=" + pkTransferItemId + "&Quantity=" + Quantity + "", ApiToken, ApiServer);
->>>>>>> refs/remotes/LinnSystems/master
         }
 
         public static List<WarehouseTransferNote> GetTransferNotes(Guid pkTransferId, string ApiToken, string ApiServer)

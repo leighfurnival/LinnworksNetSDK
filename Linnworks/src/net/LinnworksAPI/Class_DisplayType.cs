@@ -9,6 +9,5 @@ namespace LinnworksAPI
         FreeText,
         AutoComplete,
         Dropdown,
-        None,
     }
 }
