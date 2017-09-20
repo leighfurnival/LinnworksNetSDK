@@ -1,12 +1,17 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
 namespace LinnworksAPI
 {
+    [JsonConverter(typeof(StringEnumConverter))]
     public enum FieldType
     {
-        Int,
-        Double,
+        Default,
         String,
-        Boolean,
-        Select,
-        Other,
+        Int,
+        Bool,
+        Guid,
+        Float,
+        Double,
     }
 }

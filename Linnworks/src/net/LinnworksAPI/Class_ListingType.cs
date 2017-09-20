@@ -5,5 +5,6 @@ namespace LinnworksAPI
         All,
         Variations,
         NonVariations,
+        SingleItems,
     }
 }

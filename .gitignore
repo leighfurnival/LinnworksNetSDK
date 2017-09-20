@@ -275,3 +275,4 @@ __pycache__/
 # tools/
 *.pfx
 Linnworks/src/net/LinnworksAPI/obj/Debug/LinnworksAPI.dll
+*.dll

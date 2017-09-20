@@ -2,8 +2,14 @@ namespace LinnworksAPI
 {
     public enum FieldTypes
     {
-        TITLE,
-        DESCRIPTION,
-        PRICE,
+        Decimal,
+        Text,
+        List,
+        Date,
+        Boolean,
+        None,
+        Button,
+        HtmlList,
+        Integer,
     }
 }

@@ -9,10 +9,13 @@ namespace LinnworksAPI
         public Int32 Due;
         public Int32 MinimumLevel;
         public Int32 Available;
+        public DateTime? CreationDate;
+        public Boolean? IsCompositeParent;
         public String ItemNumber;
         public String ItemTitle;
         public String BarcodeNumber;
         public String MetaData;
+        public Boolean isBatchedStockType;
         public Double PurchasePrice;
         public Double? RetailPrice;
         public Double TaxRate;
@@ -26,6 +29,9 @@ namespace LinnworksAPI
         public Double Width;
         public Double Depth;
         public Double Weight;
+        public Int32 InventoryTrackingType;
+        public Boolean BatchNumberScanRequired;
+        public Boolean SerialNumberScanRequired;
         public Guid StockItemId;
     }
 }

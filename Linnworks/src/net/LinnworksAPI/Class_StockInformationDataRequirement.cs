@@ -9,5 +9,7 @@ namespace LinnworksAPI
         ChannelTitle,
         ChannelDescription,
         ChannelPrice,
+        ExtendedProperties,
+        Images,
     }
 }

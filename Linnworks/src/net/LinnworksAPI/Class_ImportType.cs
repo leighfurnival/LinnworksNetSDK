@@ -6,6 +6,7 @@ namespace LinnworksAPI
         Customers,
         eBayCompatibility,
         eBayCompatibilityKtypes,
+        eBayCompatibilityePID,
         Inventory,
         ProcessOrder,
         StockCount,
@@ -25,5 +26,8 @@ namespace LinnworksAPI
         DeleteVariationItems,
         DeleteItemMapping,
         DeleteComposition,
+        StockLevelBatch,
+        ebayListingStrikeOff,
+        RenameSKU,
     }
 }

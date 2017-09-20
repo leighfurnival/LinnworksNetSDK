@@ -10,5 +10,7 @@ namespace LinnworksAPI
         public Double? TaxRate;
         public Guid fkCountryId;
         public CountryRegionReplaceWith ReplaceWith;
+        public Boolean IsHomeRegion;
+        public Int32 TagsCount;
     }
 }
