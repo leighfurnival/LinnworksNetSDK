@@ -78,6 +78,10 @@ namespace LinnworksAPI
         public int CancellationQuantity;
         public Guid fkOrderItemReturnId;
         public DateTime ActionDate;
+<<<<<<< HEAD
         public int RefundStatus;
+=======
+        public PostSaleStatusType RefundStatus;
+>>>>>>> refs/remotes/LinnSystems/master
     }
 }

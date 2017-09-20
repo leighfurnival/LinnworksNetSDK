@@ -12,6 +12,7 @@ namespace LinnworksAPI
         public List<StockItemTitle> ItemChannelTitles;
         public List<StockItemPrice> ItemChannelPrices;
         public List<StockItemImage> Images;
+<<<<<<< HEAD
         public string ItemNumber;
         public string ItemTitle;
         public string BarcodeNumber;
@@ -19,6 +20,16 @@ namespace LinnworksAPI
         public double PurchasePrice;
         public double? RetailPrice;
         public double TaxRate;
+=======
+        public String ItemNumber;
+        public String ItemTitle;
+        public String BarcodeNumber;
+        public String MetaData;
+        public Boolean isBatchedStockType;
+        public Double PurchasePrice;
+        public Double? RetailPrice;
+        public Double TaxRate;
+>>>>>>> refs/remotes/LinnSystems/master
         public Guid PostalServiceId;
         public string PostalServiceName;
         public Guid CategoryId;
@@ -30,6 +41,9 @@ namespace LinnworksAPI
         public double Depth;
         public double Weight;
         public DateTime? CreationDate;
+        public Int32 InventoryTrackingType;
+        public Boolean BatchNumberScanRequired;
+        public Boolean SerialNumberScanRequired;
         public Guid StockItemId;
     }
 }
