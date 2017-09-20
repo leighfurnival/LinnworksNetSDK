@@ -21,4 +21,10 @@ namespace LinnworksAPI
         public List<CalcBinItem> Items;
         public SqlDataRecord DataRecordMetaData;
     }
+
+    public class CalcBinItem
+    {
+        public Guid fkOrderItemId;
+        public Int32 Quantity;
+    }
 }

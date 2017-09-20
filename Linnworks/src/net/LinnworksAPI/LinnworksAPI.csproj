@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Auth.cs" />
+    <Compile Include="Class_BookInStockItem.cs" />
     <Compile Include="ChannelMapping.cs" />
     <Compile Include="Class_ActionType.cs" />
     <Compile Include="Class_ActionTypeDescriptor.cs" />
@@ -84,11 +85,9 @@
     <Compile Include="Class_BatchedBookIn.cs" />
     <Compile Include="Class_BookedReturnsExchangeItem.cs" />
     <Compile Include="Class_BookedReturnsExchangeOrder.cs" />
-    <Compile Include="Class_BookInStockItem.cs" />
     <Compile Include="Class_BooleanFieldFilter.cs" />
     <Compile Include="Class_BooleanFilter.cs" />
     <Compile Include="Class_CalcBin.cs" />
-    <Compile Include="Class_CalcBinItem.cs" />
     <Compile Include="Class_CalcMethod.cs" />
     <Compile Include="Class_CalcOrderHeader.cs" />
     <Compile Include="Class_CalcOrderItem.cs" />
@@ -124,7 +123,6 @@
     <Compile Include="Class_ConfigChannelLocation.cs" />
     <Compile Include="Class_ConfigChannelLocationBinding.cs" />
     <Compile Include="Class_ConfigItem.cs" />
-    <Compile Include="Class_ConfigItemExternal.cs" />
     <Compile Include="Class_ConfigPaymentMethodMapping.cs" />
     <Compile Include="Class_ConfigPaymentMethodMappingItem.cs" />
     <Compile Include="Class_ConfigPostalServiceMapping.cs" />
@@ -160,7 +158,6 @@
     <Compile Include="Class_Delete_PurchaseOrderItemParameter.cs" />
     <Compile Include="Class_Deliver_PurchaseItemParameter.cs" />
     <Compile Include="Class_Deliver_PurchaseOrderItemAllNoBatchResponse.cs" />
-    <Compile Include="Class_Deliver_PurchaseOrderItemAllResponse.cs" />
     <Compile Include="Class_DiscountType.cs" />
     <Compile Include="Class_DisplayType.cs" />
     <Compile Include="Class_EvaluatorDescriptor.cs" />
@@ -208,7 +205,6 @@
     <Compile Include="Class_GetJobErrorsResponse.cs" />
     <Compile Include="Class_GetJobRequest.cs" />
     <Compile Include="Class_GetJobResponse.cs" />
-    <Compile Include="Class_GetOrderPackagingCalculationRequest.cs" />
     <Compile Include="Class_GetPrintAttachmentRequest.cs" />
     <Compile Include="Class_GetPrintAttachmentResponse.cs" />
     <Compile Include="Class_GetScrapCategoriesResponse.cs" />
@@ -300,7 +296,6 @@
     <Compile Include="Class_PackedItem.cs" />
     <Compile Include="Class_PackingResult.cs" />
     <Compile Include="Class_PagedStockCategoryLocationProductResult.cs" />
-    <Compile Include="Class_PartialUpdateParameter.cs" />
     <Compile Include="Class_PaymentMethod.cs" />
     <Compile Include="Class_PaymentRequest.cs" />
     <Compile Include="Class_PaymentResponse.cs" />
@@ -332,7 +327,6 @@
     <Compile Include="Class_PurchaseOrderItem.cs" />
     <Compile Include="Class_PurchaseOrderNote.cs" />
     <Compile Include="Class_PurchaseOrderStatus.cs" />
-    <Compile Include="Class_PurchaseOrderWithStockItem.cs" />
     <Compile Include="Class_RefundInfo.cs" />
     <Compile Include="Class_RefundItem.cs" />
     <Compile Include="Class_RefundItemType.cs" />
@@ -367,7 +361,6 @@
     <Compile Include="Class_Search_PurchaseOrderParameter.cs" />
     <Compile Include="Class_Search_PurchaseOrdersResult.cs" />
     <Compile Include="Class_Search_PurchaseOrder_AuditLog.cs" />
-    <Compile Include="Class_Search_Stock_ByKey.cs" />
     <Compile Include="Class_SelectStringValueOption.cs" />
     <Compile Include="Class_ServiceItem.cs" />
     <Compile Include="Class_SessionCache.cs" />
@@ -465,10 +458,12 @@
     <Compile Include="Class_WarehouseTransferNote.cs" />
     <Compile Include="Class_WarehouseTransferProperty.cs" />
     <Compile Include="Class_WorkflowGroup.cs" />
+    <Compile Include="ConfigItemExternal.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Dashboards.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="Features.cs" />
+    <Compile Include="GetOrderPackagingCalculationRequest.cs" />
     <Compile Include="ImportExport.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Locations.cs" />
@@ -476,6 +471,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="OrderWorkflow.cs" />
+    <Compile Include="PartialUpdateParameter.cs" />
     <Compile Include="Payments.cs" />
     <Compile Include="PostalServices.cs" />
     <Compile Include="PostSale.cs" />
@@ -483,10 +479,12 @@
     <Compile Include="ProcessedOrders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PurchaseOrder.cs" />
+    <Compile Include="PurchaseOrderWithStockItem.cs" />
     <Compile Include="ReturnsRefunds.cs" />
     <Compile Include="RulesEngine.cs" />
+    <Compile Include="Search_Stock_ByKey.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="Stock.cs" />
+    <Compile Include="StockMethods.cs" />
     <Compile Include="WarehouseTransfer.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -48,11 +48,6 @@ namespace LinnworksAPI
             return Newtonsoft.Json.JsonConvert.DeserializeObject<CustomScriptResult>(Factory.GetResponse("Dashboards/ExecuteCustomScriptQuery", "script=" + script + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
-        public static CustomScriptResult ExecuteCustomScriptQuery(String script, String ApiToken, String ApiServer)
-        {
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<CustomScriptResult>(Factory.GetResponse("Dashboards/ExecuteCustomScriptQuery", "script=" + script + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-        }
-
         public static CustomScriptResult ExecuteCustomPagedScript(Int32 scriptId, ScriptParameter parameters, Int32 entriesPerPage, Int32 pageNumber, String ApiToken, String ApiServer)
         {
             return Newtonsoft.Json.JsonConvert.DeserializeObject<CustomScriptResult>(Factory.GetResponse("Dashboards/ExecuteCustomPagedScript", "scriptId=" + scriptId + "&parameters=" + Newtonsoft.Json.JsonConvert.SerializeObject(parameters, serializerSettings) + "&entriesPerPage=" + entriesPerPage + "&pageNumber=" + pageNumber + "", ApiToken, ApiServer), new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });

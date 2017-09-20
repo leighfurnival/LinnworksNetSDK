@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace LinnworksAPI
 {
@@ -7,5 +8,10 @@ namespace LinnworksAPI
         public Deliver_PurchaseOrderItemAllResponse poHeaderAndItems;
         public Boolean allItemsDelivered;
         public String message;
+    }
+    public class Deliver_PurchaseOrderItemAllResponse
+    {
+        public List<PurchaseOrderItem> PurchaseOrderItems;
+        public PurchaseOrderHeader PurchaseOrderHeader;
     }
 }
