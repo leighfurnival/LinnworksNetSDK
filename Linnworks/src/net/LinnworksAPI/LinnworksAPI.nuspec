@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Linnworks-API-WHL</id>
+    <version>1.0.0</version>
+    <title>WhiteHinge Linnworks Nuget</title>
+    <authors>WhiteHinge</authors>
+    <owners>WhiteHinge</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple nuget package</description>
+    <releaseNotes>Summary of changes made in this release of the packag ae.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Tag1 Tag2 a</tags>
+  </metadata>
+</package>
