@@ -4,14 +4,14 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>SPC.pfx</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.0.0-CrossPlatform</Version>
+    <Version>2.0.1-CrossPlatform</Version>
     <Description>Linnworks API retargeted as a .NET Core 2.0 library</Description>
     <Copyright>Copyright Linn Systems 2015</Copyright>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 </Project>
