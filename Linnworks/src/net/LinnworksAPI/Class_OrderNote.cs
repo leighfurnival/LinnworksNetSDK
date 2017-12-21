@@ -3,7 +3,7 @@ using System;
 namespace LinnworksAPI
 {
     [Serializable]
-    public class OrderNote
+    public class  OrderNote
     {
         public bool Internal;
         public string Note;
