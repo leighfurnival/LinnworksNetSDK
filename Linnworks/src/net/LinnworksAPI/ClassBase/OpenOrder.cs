@@ -11,8 +11,9 @@ using System.ComponentModel;
 using System.Reflection;
 
 namespace LinnworksAPI
-{ 
-	public class OpenOrder
+{
+    [Serializable]
+    public class OpenOrder
 	{ 
 		public String ORDER_NOT_FOUND_ERROR;
 		public Guid OrderId;

@@ -11,7 +11,8 @@ using System.ComponentModel;
 using System.Reflection;
 
 namespace LinnworksAPI
-{ 
+{
+	[Serializable]
 	public class CustomerAddress
 	{ 
 		public String EmailAddress;
