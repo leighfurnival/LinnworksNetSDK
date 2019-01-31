@@ -59,5 +59,9 @@ namespace LinnworksAPI
 		public List<OrderItemBinRack> BinRacks;
 		public Int32 InventoryTrackingType;
 		public Boolean isBatchedStockItem;
+
+		//New stuff for the new locations until we start using the new Order Input stuff.
+		public Int32 LocationID;
+		public Int32 LocationWarehouse;
 	} 
 }
