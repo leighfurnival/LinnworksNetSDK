@@ -5,6 +5,8 @@
 	 <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <AssemblyName>LinnworksAPICore</AssemblyName>
+    <RootNamespace>LinnworksAPICore</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
