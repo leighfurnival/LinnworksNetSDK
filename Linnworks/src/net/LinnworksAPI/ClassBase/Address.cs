@@ -12,6 +12,7 @@ using System.Reflection;
 
 namespace LinnworksAPI
 { 
+    [Serializable]
 	public class Address
 	{ 
 		public String Address1;
