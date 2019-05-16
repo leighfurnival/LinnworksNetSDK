@@ -24,6 +24,12 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+Linnworks/src/net/LinnworksAPI/[Bb]in/
+Linnworks/src/net/LinnworksAPI/[Oo]bj/
+Linnworks/src/net/LinnworksAPI/[Ll]og/
+Linnworks/src/netcore/LinnworksAPI/[Bb]in/
+Linnworks/src/netcore/LinnworksAPI/[Oo]bj/
+Linnworks/src/netcore/LinnworksAPI/[Ll]og/
 
 # Visual Studio 2015 cache/options directory
 .vs/
